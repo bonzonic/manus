@@ -1,0 +1,90 @@
+verifier=om-verifier sdk-component-L7GDB-20261024-1717
+timestamp_utc=2026-10-24T09:19:32.1053502Z
+dotnet_path=C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\dotnet.exe
+working_directory=C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB
+process_DOTNET_CLI_HOME=C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\plans\verification\sdk-component-L7GDB-20261024-1717\evidence\temporary-home
+process_DOTNET_CLI_TELEMETRY_OPTOUT=1
+other_verifier_injected_environment=none
+
+COMMAND: C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\dotnet.exe --info
+STARTED=True
+PID=36292
+EXIT=0
+STDOUT_BEGIN
+.NET SDK:
+ Version:           10.0.402
+ Commit:            a8dd0577c5
+ Workload version:  10.0.400-manifests.da132f47
+ MSBuild version:   18.9.15+a8dd0577c
+
+Runtime Environment:
+ OS Name:     Windows
+ OS Version:  10.0.26200
+ OS Platform: Windows
+ RID:         win-x64
+ Base Path:   C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\sdk\10.0.402\
+
+.NET workloads installed:
+There are no installed workloads to display.
+Configured to use workload sets when installing new manifests.
+No workload sets are installed. Run "dotnet workload restore" to install a workload set.
+
+Host:
+  Version:      10.0.13
+  Architecture: x64
+  Commit:       4099f83977
+
+.NET SDKs installed:
+  10.0.402 [C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\sdk]
+
+.NET runtimes installed:
+  Microsoft.AspNetCore.App 10.0.13 [C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 10.0.13 [C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.WindowsDesktop.App 10.0.13 [C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\shared\Microsoft.WindowsDesktop.App]
+
+Other architectures found:
+  None
+
+Environment variables:
+  DOTNET_CLI_HOME                          [C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\plans\verification\sdk-component-L7GDB-20261024-1717\evidence\temporary-home]
+  DOTNET_CLI_TELEMETRY_OPTOUT              [1]
+
+global.json file:
+  Not found
+
+Learn more:
+  https://aka.ms/dotnet/info
+
+Download .NET:
+  https://aka.ms/dotnet/download
+
+STDOUT_END
+STDERR_BEGIN
+
+STDERR_END
+
+COMMAND: C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\dotnet.exe --list-sdks
+STARTED=True
+PID=25864
+EXIT=0
+STDOUT_BEGIN
+10.0.402 [C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\sdk]
+
+STDOUT_END
+STDERR_BEGIN
+
+STDERR_END
+
+COMMAND: C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\dotnet.exe --list-runtimes
+STARTED=True
+PID=16876
+EXIT=0
+STDOUT_BEGIN
+Microsoft.AspNetCore.App 10.0.13 [C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 10.0.13 [C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.WindowsDesktop.App 10.0.13 [C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet\shared\Microsoft.WindowsDesktop.App]
+
+STDOUT_END
+STDERR_BEGIN
+
+STDERR_END

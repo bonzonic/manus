@@ -1,0 +1,14 @@
+{
+  "device": "device:26d10d73-0966-4b78-b72f-9a97d38e8663",
+  "source": "kernel32 GetSystemTimes / GlobalMemoryStatusEx",
+  "samples": [
+    {"timestamp":"2026-10-24T08:17:08.3469802Z","cpuPercent":18.88,"physicalMemoryPercent":57,"availablePhysicalMB":13788,"totalPhysicalMB":32610},
+    {"timestamp":"2026-10-24T08:17:13.3683447Z","cpuPercent":19.43,"physicalMemoryPercent":57,"availablePhysicalMB":13822,"totalPhysicalMB":32610},
+    {"timestamp":"2026-10-24T08:17:18.3823573Z","cpuPercent":19.81,"physicalMemoryPercent":57,"availablePhysicalMB":13723,"totalPhysicalMB":32610}
+  ],
+  "result": "GO window; remeasure before actual implementation launch if older than 30 seconds",
+  "reservationPolicy": "Parent is the only dispatcher for this run; admit one heavy stage at a time, no concurrent implementer/reviewer/browser stages. Other processes are reflected in device-wide samples and are not stopped.",
+  "samplerPid": 15116,
+  "samplerFinished": true,
+  "note": "A prior attempt to write evidence directly from the terminal was denied; sampling was rerun read-only and this receipt was saved with the authorized file tool. No null/stale values are treated as idle capacity."
+}

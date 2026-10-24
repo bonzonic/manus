@@ -1,0 +1,1 @@
+NO_MIC_SELFTEST PASS stale-final-ignored new-generation-accepted cancel-discarded clipboard-calls=0 recognizer-created=0

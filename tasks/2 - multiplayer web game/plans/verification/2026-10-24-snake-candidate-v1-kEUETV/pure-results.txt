@@ -1,0 +1,11 @@
+Candidate eebdb1d9408a2002c5971d7c8b4f15ba1f558bed; baseline 0c3155d560692d4042c5fdb7cb6a569cbf4c0cee
+Verifier run at 2026-10-24T17:34+08:00, candidate worktree detached and clean.
+
+PASS npm run test:rules: 6/6
+PASS npm run test:rooms: 4/4
+PASS npm run test:client: 6/6
+PASS npm run test:security: 3/3
+PASS node --test test/transport/recovery-wire.test.js: 2/2
+BOUNDARY node --test test/transport/recovery-room-play-rematch.test.js: 2 passed, 1 failed with known child-localhost connect EACCES 127.0.0.1:<auto-port>; not counted as code failure and not repeated.
+
+No full suite. Parent network:true conduit required for browser/real WS, latency, screenshots, and S10/public-route grading.

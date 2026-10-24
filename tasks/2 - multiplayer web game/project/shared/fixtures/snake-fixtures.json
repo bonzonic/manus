@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "cases": [
+    {"name":"legal-two-turn-queue","directions":["UP","LEFT"],"maxQueue":2},
+    {"name":"illegal-reversal","current":"RIGHT","attempt":"LEFT","expected":"BAD_DIRECTION"},
+    {"name":"apple-growth","lengthBefore":5,"lengthAfter":6,"applesBefore":0,"applesAfter":1},
+    {"name":"mushroom-refresh","boostTicks":240,"stacking":false},
+    {"name":"same-tick-head-on","winner":null,"reason":"HEAD_ON"},
+    {"name":"timeout-draw","winner":null,"reason":"TIMEOUT_DRAW"},
+    {"name":"bounds","maxMessageBytes":4096,"maxSnapshotBytes":32768,"maxOutputBytes":65536}
+  ]
+}

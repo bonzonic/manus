@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Browser Task Agent</title><link rel="stylesheet" href="panel.css"></head>
+<body>
+<main>
+  <h1>Browser Task Agent</h1>
+  <p class="notice">First use: scoped rendered page context is sent to OpenRouter for provider processing by your selected model. Every click and fill needs one exact approval. Clearing this extension removes its session key and state; provider retention is not universally controlled. Login, payment, CAPTCHA, identity, destructive, and checkout actions remain manual or blocked.</p>
+  <section aria-labelledby="setup-heading"><h2 id="setup-heading">Setup</h2>
+    <p id="origin" role="status">Invoke on an ordinary HTTP(S) tab to begin.</p>
+    <label for="api-key">OpenRouter session key <span>(masked; never packaged)</span></label><input id="api-key" type="password" autocomplete="off" spellcheck="false">
+    <button id="save">Save session settings</button><button id="refresh">Refresh live model catalog</button>
+    <label for="model">Permitted text-chat model</label><select id="model"><option value="">Load catalog first</option></select><p id="catalog-status" role="status">No catalog loaded; no model is invented.</p>
+  </section>
+  <section aria-labelledby="task-heading"><h2 id="task-heading">Task</h2><label for="intent">Request</label><textarea id="intent" rows="3" placeholder="Search documentation or convert a value"></textarea>
+    <button id="start">Observe selected tab</button><button id="run" disabled>Run plan / advance</button><button id="pause" disabled>Pause</button><button id="cancel" disabled>Cancel</button>
+  </section>
+  <section aria-labelledby="approval-heading"><h2 id="approval-heading">Exact approval</h2><pre id="preview">No pending click or fill.</pre><button id="approve" disabled>Approve this one action</button></section>
+  <section aria-labelledby="intent-heading"><h2 id="intent-heading">Intended action and progress</h2><p id="intent-preview">Intended action: none pending.</p><p id="progress">Progress: idle.</p><p id="outcome">Outcome: not dispatched.</p></section>
+  <section aria-labelledby="timeline-heading"><h2 id="timeline-heading">Timeline</h2><ol id="timeline"></ol><button id="export">Export sanitized timeline</button><button id="clear">Clear session</button></section>
+  <p id="status" role="status">Ready. Invoke on an ordinary HTTP(S) tab.</p>
+</main><script type="module" src="panel.js"></script></body></html>

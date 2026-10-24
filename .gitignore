@@ -1,7 +1,30 @@
+# Agent / tool state (any depth)
 .claude
 .codex
 .manus
 .work
+.worktrees/
 .remember
-tasks/
-outputs/
+
+# Workspace-level agent outputs only; tasks/*/outputs hold shippable deliverables
+/outputs/
+
+# Dependencies, builds, local data
+node_modules/
+dist/
+coverage/
+.data/
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Obsidian per-user UI state
+**/.obsidian/workspace*.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,275 @@
+record_type,schema_version,id,label,level,elevation_m,floor_id,node_kind,x_m,y_m,heading_deg,status,edge_kind,from_node_id,to_node_id,direction,length_m,speed_mps,enabled
+map,1,demo-lot,Northpoint Parking,,,,,,,,,,,,,,,
+floor,,ground,Ground,0,0,,,,,,,,,,,,,
+floor,,floor-1,Floor 1,1,3,,,,,,,,,,,,,
+floor,,floor-2,Floor 2,2,6,,,,,,,,,,,,,
+floor,,floor-3,Floor 3,3,9,,,,,,,,,,,,,
+floor,,floor-4,Floor 4,4,12,,,,,,,,,,,,,
+floor,,floor-5,Floor 5,5,15,,,,,,,,,,,,,
+node,,entrance,Entry A,,,ground,entrance,10,40,0,,,,,,,,
+node,,junction-0-0,Aisle 1,,,ground,junction,40,40,0,,,,,,,,
+node,,junction-0-1,Aisle 2,,,ground,junction,47,40,0,,,,,,,,
+node,,junction-0-2,Aisle 3,,,ground,junction,54,40,0,,,,,,,,
+node,,junction-0-3,Aisle 4,,,ground,junction,61,40,0,,,,,,,,
+node,,junction-0-4,Aisle 5,,,ground,junction,68,40,0,,,,,,,,
+node,,junction-0-5,Aisle 6,,,ground,junction,75,40,0,,,,,,,,
+node,,junction-0-6,Aisle 7,,,ground,junction,82,40,0,,,,,,,,
+node,,junction-1-0,Aisle 1,,,floor-1,junction,40,40,0,,,,,,,,
+node,,junction-1-1,Aisle 2,,,floor-1,junction,47,40,0,,,,,,,,
+node,,junction-1-2,Aisle 3,,,floor-1,junction,54,40,0,,,,,,,,
+node,,junction-1-3,Aisle 4,,,floor-1,junction,61,40,0,,,,,,,,
+node,,junction-1-4,Aisle 5,,,floor-1,junction,68,40,0,,,,,,,,
+node,,junction-1-5,Aisle 6,,,floor-1,junction,75,40,0,,,,,,,,
+node,,junction-1-6,Aisle 7,,,floor-1,junction,82,40,0,,,,,,,,
+node,,junction-2-0,Aisle 1,,,floor-2,junction,40,40,0,,,,,,,,
+node,,junction-2-1,Aisle 2,,,floor-2,junction,47,40,0,,,,,,,,
+node,,junction-2-2,Aisle 3,,,floor-2,junction,54,40,0,,,,,,,,
+node,,junction-2-3,Aisle 4,,,floor-2,junction,61,40,0,,,,,,,,
+node,,junction-2-4,Aisle 5,,,floor-2,junction,68,40,0,,,,,,,,
+node,,junction-2-5,Aisle 6,,,floor-2,junction,75,40,0,,,,,,,,
+node,,junction-2-6,Aisle 7,,,floor-2,junction,82,40,0,,,,,,,,
+node,,junction-3-0,Aisle 1,,,floor-3,junction,40,40,0,,,,,,,,
+node,,junction-3-1,Aisle 2,,,floor-3,junction,47,40,0,,,,,,,,
+node,,junction-3-2,Aisle 3,,,floor-3,junction,54,40,0,,,,,,,,
+node,,junction-3-3,Aisle 4,,,floor-3,junction,61,40,0,,,,,,,,
+node,,junction-3-4,Aisle 5,,,floor-3,junction,68,40,0,,,,,,,,
+node,,junction-3-5,Aisle 6,,,floor-3,junction,75,40,0,,,,,,,,
+node,,junction-3-6,Aisle 7,,,floor-3,junction,82,40,0,,,,,,,,
+node,,junction-4-0,Aisle 1,,,floor-4,junction,40,40,0,,,,,,,,
+node,,junction-4-1,Aisle 2,,,floor-4,junction,47,40,0,,,,,,,,
+node,,junction-4-2,Aisle 3,,,floor-4,junction,54,40,0,,,,,,,,
+node,,junction-4-3,Aisle 4,,,floor-4,junction,61,40,0,,,,,,,,
+node,,junction-4-4,Aisle 5,,,floor-4,junction,68,40,0,,,,,,,,
+node,,junction-4-5,Aisle 6,,,floor-4,junction,75,40,0,,,,,,,,
+node,,junction-4-6,Aisle 7,,,floor-4,junction,82,40,0,,,,,,,,
+node,,junction-5-0,Aisle 1,,,floor-5,junction,40,40,0,,,,,,,,
+node,,junction-5-1,Aisle 2,,,floor-5,junction,47,40,0,,,,,,,,
+node,,junction-5-2,Aisle 3,,,floor-5,junction,54,40,0,,,,,,,,
+node,,junction-5-3,Aisle 4,,,floor-5,junction,61,40,0,,,,,,,,
+node,,junction-5-4,Aisle 5,,,floor-5,junction,68,40,0,,,,,,,,
+node,,junction-5-5,Aisle 6,,,floor-5,junction,75,40,0,,,,,,,,
+node,,junction-5-6,Aisle 7,,,floor-5,junction,82,40,0,,,,,,,,
+node,,landing-0,Ramp G,,,ground,ramp_landing,20,40,0,,,,,,,,
+node,,landing-1,Ramp 1,,,floor-1,ramp_landing,20,40,0,,,,,,,,
+node,,landing-2,Ramp 2,,,floor-2,ramp_landing,20,40,0,,,,,,,,
+node,,landing-3,Ramp 3,,,floor-3,ramp_landing,20,40,0,,,,,,,,
+node,,landing-4,Ramp 4,,,floor-4,ramp_landing,20,40,0,,,,,,,,
+node,,landing-5,Ramp 5,,,floor-5,ramp_landing,20,40,0,,,,,,,,
+node,,space-0-0-a,G-01,,,ground,space,40,33,0,occupied,,,,,,,
+node,,space-0-0-b,G-02,,,ground,space,40,47,0,occupied,,,,,,,
+node,,space-0-1-a,G-03,,,ground,space,47,33,0,occupied,,,,,,,
+node,,space-0-1-b,G-04,,,ground,space,47,47,0,occupied,,,,,,,
+node,,space-0-2-a,G-05,,,ground,space,54,33,0,occupied,,,,,,,
+node,,space-0-2-b,G-06,,,ground,space,54,47,0,occupied,,,,,,,
+node,,space-0-3-a,G-07,,,ground,space,61,33,0,occupied,,,,,,,
+node,,space-0-3-b,G-08,,,ground,space,61,47,0,occupied,,,,,,,
+node,,space-0-4-a,G-09,,,ground,space,68,33,0,occupied,,,,,,,
+node,,space-0-4-b,G-10,,,ground,space,68,47,0,occupied,,,,,,,
+node,,space-0-5-a,G-11,,,ground,space,75,33,0,occupied,,,,,,,
+node,,space-0-5-b,G-12,,,ground,space,75,47,0,occupied,,,,,,,
+node,,space-0-6-a,G-13,,,ground,space,82,33,0,closed,,,,,,,
+node,,space-0-6-b,G-14,,,ground,space,82,47,0,closed,,,,,,,
+node,,space-1-0-b,1-02,,,floor-1,space,40,47,0,occupied,,,,,,,
+node,,space-1-1-a,1-03,,,floor-1,space,47,33,0,occupied,,,,,,,
+node,,space-1-1-b,1-04,,,floor-1,space,47,47,0,occupied,,,,,,,
+node,,space-1-2-a,1-05,,,floor-1,space,54,33,0,occupied,,,,,,,
+node,,space-1-2-b,1-06,,,floor-1,space,54,47,0,occupied,,,,,,,
+node,,space-1-3-a,1-07,,,floor-1,space,61,33,0,occupied,,,,,,,
+node,,space-1-3-b,1-08,,,floor-1,space,61,47,0,occupied,,,,,,,
+node,,space-1-4-a,1-09,,,floor-1,space,68,33,0,occupied,,,,,,,
+node,,space-1-4-b,1-10,,,floor-1,space,68,47,0,occupied,,,,,,,
+node,,space-1-5-a,1-11,,,floor-1,space,75,33,0,occupied,,,,,,,
+node,,space-1-5-b,1-12,,,floor-1,space,75,47,0,occupied,,,,,,,
+node,,space-1-6-a,1-13,,,floor-1,space,82,33,0,closed,,,,,,,
+node,,space-1-6-b,1-14,,,floor-1,space,82,47,0,closed,,,,,,,
+node,,space-2-0-a,2-01,,,floor-2,space,40,33,0,occupied,,,,,,,
+node,,space-2-0-b,2-02,,,floor-2,space,40,47,0,occupied,,,,,,,
+node,,space-2-1-a,2-03,,,floor-2,space,47,33,0,occupied,,,,,,,
+node,,space-2-1-b,2-04,,,floor-2,space,47,47,0,occupied,,,,,,,
+node,,space-2-2-a,2-05,,,floor-2,space,54,33,0,occupied,,,,,,,
+node,,space-2-2-b,2-06,,,floor-2,space,54,47,0,occupied,,,,,,,
+node,,space-2-3-a,2-07,,,floor-2,space,61,33,0,occupied,,,,,,,
+node,,space-2-3-b,2-08,,,floor-2,space,61,47,0,occupied,,,,,,,
+node,,space-2-4-a,2-09,,,floor-2,space,68,33,0,occupied,,,,,,,
+node,,space-2-4-b,2-10,,,floor-2,space,68,47,0,occupied,,,,,,,
+node,,space-2-5-a,2-11,,,floor-2,space,75,33,0,occupied,,,,,,,
+node,,space-2-5-b,2-12,,,floor-2,space,75,47,0,occupied,,,,,,,
+node,,space-2-6-a,2-13,,,floor-2,space,82,33,0,closed,,,,,,,
+node,,space-2-6-b,2-14,,,floor-2,space,82,47,0,closed,,,,,,,
+node,,space-3-0-a,3-01,,,floor-3,space,40,33,0,occupied,,,,,,,
+node,,space-3-0-b,3-02,,,floor-3,space,40,47,0,occupied,,,,,,,
+node,,space-3-1-a,3-03,,,floor-3,space,47,33,0,occupied,,,,,,,
+node,,space-3-1-b,3-04,,,floor-3,space,47,47,0,occupied,,,,,,,
+node,,space-3-2-a,3-05,,,floor-3,space,54,33,0,occupied,,,,,,,
+node,,space-3-2-b,3-06,,,floor-3,space,54,47,0,occupied,,,,,,,
+node,,space-3-3-a,3-07,,,floor-3,space,61,33,0,occupied,,,,,,,
+node,,space-3-3-b,3-08,,,floor-3,space,61,47,0,occupied,,,,,,,
+node,,space-3-4-a,3-09,,,floor-3,space,68,33,0,occupied,,,,,,,
+node,,space-3-4-b,3-10,,,floor-3,space,68,47,0,occupied,,,,,,,
+node,,space-3-5-a,3-11,,,floor-3,space,75,33,0,occupied,,,,,,,
+node,,space-3-5-b,3-12,,,floor-3,space,75,47,0,occupied,,,,,,,
+node,,space-3-6-a,3-13,,,floor-3,space,82,33,0,closed,,,,,,,
+node,,space-3-6-b,3-14,,,floor-3,space,82,47,0,closed,,,,,,,
+node,,space-4-0-a,4-01,,,floor-4,space,40,33,0,occupied,,,,,,,
+node,,space-4-0-b,4-02,,,floor-4,space,40,47,0,occupied,,,,,,,
+node,,space-4-1-a,4-03,,,floor-4,space,47,33,0,occupied,,,,,,,
+node,,space-4-1-b,4-04,,,floor-4,space,47,47,0,occupied,,,,,,,
+node,,space-4-2-a,4-05,,,floor-4,space,54,33,0,occupied,,,,,,,
+node,,space-4-2-b,4-06,,,floor-4,space,54,47,0,occupied,,,,,,,
+node,,space-4-3-a,4-07,,,floor-4,space,61,33,0,occupied,,,,,,,
+node,,space-4-3-b,4-08,,,floor-4,space,61,47,0,occupied,,,,,,,
+node,,space-4-4-a,4-09,,,floor-4,space,68,33,0,occupied,,,,,,,
+node,,space-4-4-b,4-10,,,floor-4,space,68,47,0,occupied,,,,,,,
+node,,space-4-5-a,4-11,,,floor-4,space,75,33,0,occupied,,,,,,,
+node,,space-4-5-b,4-12,,,floor-4,space,75,47,0,occupied,,,,,,,
+node,,space-4-6-a,4-13,,,floor-4,space,82,33,0,closed,,,,,,,
+node,,space-4-6-b,4-14,,,floor-4,space,82,47,0,closed,,,,,,,
+node,,space-5-0-b,5-02,,,floor-5,space,40,47,0,occupied,,,,,,,
+node,,space-5-1-a,5-03,,,floor-5,space,47,33,0,occupied,,,,,,,
+node,,space-5-1-b,5-04,,,floor-5,space,47,47,0,occupied,,,,,,,
+node,,space-5-2-a,5-05,,,floor-5,space,54,33,0,occupied,,,,,,,
+node,,space-5-2-b,5-06,,,floor-5,space,54,47,0,occupied,,,,,,,
+node,,space-5-3-a,5-07,,,floor-5,space,61,33,0,occupied,,,,,,,
+node,,space-5-3-b,5-08,,,floor-5,space,61,47,0,occupied,,,,,,,
+node,,space-5-4-a,5-09,,,floor-5,space,68,33,0,occupied,,,,,,,
+node,,space-5-4-b,5-10,,,floor-5,space,68,47,0,occupied,,,,,,,
+node,,space-5-5-a,5-11,,,floor-5,space,75,33,0,occupied,,,,,,,
+node,,space-5-5-b,5-12,,,floor-5,space,75,47,0,occupied,,,,,,,
+node,,space-5-6-a,5-13,,,floor-5,space,82,33,0,closed,,,,,,,
+node,,space-5-6-b,5-14,,,floor-5,space,82,47,0,closed,,,,,,,
+node,,space-f1-target,1-01,,,floor-1,space,40,39,0,free,,,,,,,
+node,,space-f5-target,5-01,,,floor-5,space,40,33,0,free,,,,,,,
+node,,unconnected-space,Unconnected demo,,,ground,space,90,18,0,free,,,,,,,
+edge,,access-space-0-0-a,Parking access,,,,,,,,,parking_access,junction-0-0,space-0-0-a,forward,7,1,true
+edge,,access-space-0-0-b,Parking access,,,,,,,,,parking_access,junction-0-0,space-0-0-b,forward,7,1,true
+edge,,access-space-0-1-a,Parking access,,,,,,,,,parking_access,junction-0-1,space-0-1-a,forward,7,1,true
+edge,,access-space-0-1-b,Parking access,,,,,,,,,parking_access,junction-0-1,space-0-1-b,forward,7,1,true
+edge,,access-space-0-2-a,Parking access,,,,,,,,,parking_access,junction-0-2,space-0-2-a,forward,7,1,true
+edge,,access-space-0-2-b,Parking access,,,,,,,,,parking_access,junction-0-2,space-0-2-b,forward,7,1,true
+edge,,access-space-0-3-a,Parking access,,,,,,,,,parking_access,junction-0-3,space-0-3-a,forward,7,1,true
+edge,,access-space-0-3-b,Parking access,,,,,,,,,parking_access,junction-0-3,space-0-3-b,forward,7,1,true
+edge,,access-space-0-4-a,Parking access,,,,,,,,,parking_access,junction-0-4,space-0-4-a,forward,7,1,true
+edge,,access-space-0-4-b,Parking access,,,,,,,,,parking_access,junction-0-4,space-0-4-b,forward,7,1,true
+edge,,access-space-0-5-a,Parking access,,,,,,,,,parking_access,junction-0-5,space-0-5-a,forward,7,1,true
+edge,,access-space-0-5-b,Parking access,,,,,,,,,parking_access,junction-0-5,space-0-5-b,forward,7,1,true
+edge,,access-space-0-6-a,Parking access,,,,,,,,,parking_access,junction-0-6,space-0-6-a,forward,7,1,true
+edge,,access-space-0-6-b,Parking access,,,,,,,,,parking_access,junction-0-6,space-0-6-b,forward,7,1,true
+edge,,access-space-1-0-b,Parking access,,,,,,,,,parking_access,junction-1-0,space-1-0-b,forward,7,1,true
+edge,,access-space-1-1-a,Parking access,,,,,,,,,parking_access,junction-1-1,space-1-1-a,forward,7,1,true
+edge,,access-space-1-1-b,Parking access,,,,,,,,,parking_access,junction-1-1,space-1-1-b,forward,7,1,true
+edge,,access-space-1-2-a,Parking access,,,,,,,,,parking_access,junction-1-2,space-1-2-a,forward,7,1,true
+edge,,access-space-1-2-b,Parking access,,,,,,,,,parking_access,junction-1-2,space-1-2-b,forward,7,1,true
+edge,,access-space-1-3-a,Parking access,,,,,,,,,parking_access,junction-1-3,space-1-3-a,forward,7,1,true
+edge,,access-space-1-3-b,Parking access,,,,,,,,,parking_access,junction-1-3,space-1-3-b,forward,7,1,true
+edge,,access-space-1-4-a,Parking access,,,,,,,,,parking_access,junction-1-4,space-1-4-a,forward,7,1,true
+edge,,access-space-1-4-b,Parking access,,,,,,,,,parking_access,junction-1-4,space-1-4-b,forward,7,1,true
+edge,,access-space-1-5-a,Parking access,,,,,,,,,parking_access,junction-1-5,space-1-5-a,forward,7,1,true
+edge,,access-space-1-5-b,Parking access,,,,,,,,,parking_access,junction-1-5,space-1-5-b,forward,7,1,true
+edge,,access-space-1-6-a,Parking access,,,,,,,,,parking_access,junction-1-6,space-1-6-a,forward,7,1,true
+edge,,access-space-1-6-b,Parking access,,,,,,,,,parking_access,junction-1-6,space-1-6-b,forward,7,1,true
+edge,,access-space-2-0-a,Parking access,,,,,,,,,parking_access,junction-2-0,space-2-0-a,forward,7,1,true
+edge,,access-space-2-0-b,Parking access,,,,,,,,,parking_access,junction-2-0,space-2-0-b,forward,7,1,true
+edge,,access-space-2-1-a,Parking access,,,,,,,,,parking_access,junction-2-1,space-2-1-a,forward,7,1,true
+edge,,access-space-2-1-b,Parking access,,,,,,,,,parking_access,junction-2-1,space-2-1-b,forward,7,1,true
+edge,,access-space-2-2-a,Parking access,,,,,,,,,parking_access,junction-2-2,space-2-2-a,forward,7,1,true
+edge,,access-space-2-2-b,Parking access,,,,,,,,,parking_access,junction-2-2,space-2-2-b,forward,7,1,true
+edge,,access-space-2-3-a,Parking access,,,,,,,,,parking_access,junction-2-3,space-2-3-a,forward,7,1,true
+edge,,access-space-2-3-b,Parking access,,,,,,,,,parking_access,junction-2-3,space-2-3-b,forward,7,1,true
+edge,,access-space-2-4-a,Parking access,,,,,,,,,parking_access,junction-2-4,space-2-4-a,forward,7,1,true
+edge,,access-space-2-4-b,Parking access,,,,,,,,,parking_access,junction-2-4,space-2-4-b,forward,7,1,true
+edge,,access-space-2-5-a,Parking access,,,,,,,,,parking_access,junction-2-5,space-2-5-a,forward,7,1,true
+edge,,access-space-2-5-b,Parking access,,,,,,,,,parking_access,junction-2-5,space-2-5-b,forward,7,1,true
+edge,,access-space-2-6-a,Parking access,,,,,,,,,parking_access,junction-2-6,space-2-6-a,forward,7,1,true
+edge,,access-space-2-6-b,Parking access,,,,,,,,,parking_access,junction-2-6,space-2-6-b,forward,7,1,true
+edge,,access-space-3-0-a,Parking access,,,,,,,,,parking_access,junction-3-0,space-3-0-a,forward,7,1,true
+edge,,access-space-3-0-b,Parking access,,,,,,,,,parking_access,junction-3-0,space-3-0-b,forward,7,1,true
+edge,,access-space-3-1-a,Parking access,,,,,,,,,parking_access,junction-3-1,space-3-1-a,forward,7,1,true
+edge,,access-space-3-1-b,Parking access,,,,,,,,,parking_access,junction-3-1,space-3-1-b,forward,7,1,true
+edge,,access-space-3-2-a,Parking access,,,,,,,,,parking_access,junction-3-2,space-3-2-a,forward,7,1,true
+edge,,access-space-3-2-b,Parking access,,,,,,,,,parking_access,junction-3-2,space-3-2-b,forward,7,1,true
+edge,,access-space-3-3-a,Parking access,,,,,,,,,parking_access,junction-3-3,space-3-3-a,forward,7,1,true
+edge,,access-space-3-3-b,Parking access,,,,,,,,,parking_access,junction-3-3,space-3-3-b,forward,7,1,true
+edge,,access-space-3-4-a,Parking access,,,,,,,,,parking_access,junction-3-4,space-3-4-a,forward,7,1,true
+edge,,access-space-3-4-b,Parking access,,,,,,,,,parking_access,junction-3-4,space-3-4-b,forward,7,1,true
+edge,,access-space-3-5-a,Parking access,,,,,,,,,parking_access,junction-3-5,space-3-5-a,forward,7,1,true
+edge,,access-space-3-5-b,Parking access,,,,,,,,,parking_access,junction-3-5,space-3-5-b,forward,7,1,true
+edge,,access-space-3-6-a,Parking access,,,,,,,,,parking_access,junction-3-6,space-3-6-a,forward,7,1,true
+edge,,access-space-3-6-b,Parking access,,,,,,,,,parking_access,junction-3-6,space-3-6-b,forward,7,1,true
+edge,,access-space-4-0-a,Parking access,,,,,,,,,parking_access,junction-4-0,space-4-0-a,forward,7,1,true
+edge,,access-space-4-0-b,Parking access,,,,,,,,,parking_access,junction-4-0,space-4-0-b,forward,7,1,true
+edge,,access-space-4-1-a,Parking access,,,,,,,,,parking_access,junction-4-1,space-4-1-a,forward,7,1,true
+edge,,access-space-4-1-b,Parking access,,,,,,,,,parking_access,junction-4-1,space-4-1-b,forward,7,1,true
+edge,,access-space-4-2-a,Parking access,,,,,,,,,parking_access,junction-4-2,space-4-2-a,forward,7,1,true
+edge,,access-space-4-2-b,Parking access,,,,,,,,,parking_access,junction-4-2,space-4-2-b,forward,7,1,true
+edge,,access-space-4-3-a,Parking access,,,,,,,,,parking_access,junction-4-3,space-4-3-a,forward,7,1,true
+edge,,access-space-4-3-b,Parking access,,,,,,,,,parking_access,junction-4-3,space-4-3-b,forward,7,1,true
+edge,,access-space-4-4-a,Parking access,,,,,,,,,parking_access,junction-4-4,space-4-4-a,forward,7,1,true
+edge,,access-space-4-4-b,Parking access,,,,,,,,,parking_access,junction-4-4,space-4-4-b,forward,7,1,true
+edge,,access-space-4-5-a,Parking access,,,,,,,,,parking_access,junction-4-5,space-4-5-a,forward,7,1,true
+edge,,access-space-4-5-b,Parking access,,,,,,,,,parking_access,junction-4-5,space-4-5-b,forward,7,1,true
+edge,,access-space-4-6-a,Parking access,,,,,,,,,parking_access,junction-4-6,space-4-6-a,forward,7,1,true
+edge,,access-space-4-6-b,Parking access,,,,,,,,,parking_access,junction-4-6,space-4-6-b,forward,7,1,true
+edge,,access-space-5-0-b,Parking access,,,,,,,,,parking_access,junction-5-0,space-5-0-b,forward,7,1,true
+edge,,access-space-5-1-a,Parking access,,,,,,,,,parking_access,junction-5-1,space-5-1-a,forward,7,1,true
+edge,,access-space-5-1-b,Parking access,,,,,,,,,parking_access,junction-5-1,space-5-1-b,forward,7,1,true
+edge,,access-space-5-2-a,Parking access,,,,,,,,,parking_access,junction-5-2,space-5-2-a,forward,7,1,true
+edge,,access-space-5-2-b,Parking access,,,,,,,,,parking_access,junction-5-2,space-5-2-b,forward,7,1,true
+edge,,access-space-5-3-a,Parking access,,,,,,,,,parking_access,junction-5-3,space-5-3-a,forward,7,1,true
+edge,,access-space-5-3-b,Parking access,,,,,,,,,parking_access,junction-5-3,space-5-3-b,forward,7,1,true
+edge,,access-space-5-4-a,Parking access,,,,,,,,,parking_access,junction-5-4,space-5-4-a,forward,7,1,true
+edge,,access-space-5-4-b,Parking access,,,,,,,,,parking_access,junction-5-4,space-5-4-b,forward,7,1,true
+edge,,access-space-5-5-a,Parking access,,,,,,,,,parking_access,junction-5-5,space-5-5-a,forward,7,1,true
+edge,,access-space-5-5-b,Parking access,,,,,,,,,parking_access,junction-5-5,space-5-5-b,forward,7,1,true
+edge,,access-space-5-6-a,Parking access,,,,,,,,,parking_access,junction-5-6,space-5-6-a,forward,7,1,true
+edge,,access-space-5-6-b,Parking access,,,,,,,,,parking_access,junction-5-6,space-5-6-b,forward,7,1,true
+edge,,access-space-f5-target,Parking access,,,,,,,,,parking_access,junction-5-0,space-f5-target,forward,7,1.4,true
+edge,,edge-express-ramp,Express ramp,,,,,,,,,ramp,landing-0,landing-5,both,25,1,true
+edge,,edge-f1-access,Parking access,,,,,,,,,parking_access,junction-1-0,space-f1-target,forward,1,0.2,true
+edge,,entry-road,Main aisle,,,,,,,,,road,entrance,landing-0,both,10,1,true
+edge,,ramp-0-1,Floor connector,,,,,,,,,ramp,landing-0,landing-1,both,55,1,true
+edge,,ramp-1-2,Floor connector,,,,,,,,,ramp,landing-1,landing-2,both,15,1,true
+edge,,ramp-2-3,Floor connector,,,,,,,,,ramp,landing-2,landing-3,both,15,1,true
+edge,,ramp-3-4,Floor connector,,,,,,,,,ramp,landing-3,landing-4,both,15,1,true
+edge,,ramp-4-5,Floor connector,,,,,,,,,ramp,landing-4,landing-5,both,15,1,true
+edge,,road-0-0,Main aisle,,,,,,,,,road,landing-0,junction-0-0,both,20,1,true
+edge,,road-0-1,Main aisle,,,,,,,,,road,junction-0-0,junction-0-1,both,7,2.78,true
+edge,,road-0-2,Main aisle,,,,,,,,,road,junction-0-1,junction-0-2,both,7,2.78,true
+edge,,road-0-3,Main aisle,,,,,,,,,road,junction-0-2,junction-0-3,both,7,2.78,true
+edge,,road-0-4,Main aisle,,,,,,,,,road,junction-0-3,junction-0-4,both,7,2.78,true
+edge,,road-0-5,Main aisle,,,,,,,,,road,junction-0-4,junction-0-5,both,7,2.78,true
+edge,,road-0-6,Main aisle,,,,,,,,,road,junction-0-5,junction-0-6,both,7,2.78,true
+edge,,road-1-0,Main aisle,,,,,,,,,road,landing-1,junction-1-0,both,20,1,true
+edge,,road-1-1,Main aisle,,,,,,,,,road,junction-1-0,junction-1-1,both,7,2.78,true
+edge,,road-1-2,Main aisle,,,,,,,,,road,junction-1-1,junction-1-2,both,7,2.78,true
+edge,,road-1-3,Main aisle,,,,,,,,,road,junction-1-2,junction-1-3,both,7,2.78,true
+edge,,road-1-4,Main aisle,,,,,,,,,road,junction-1-3,junction-1-4,both,7,2.78,true
+edge,,road-1-5,Main aisle,,,,,,,,,road,junction-1-4,junction-1-5,both,7,2.78,true
+edge,,road-1-6,Main aisle,,,,,,,,,road,junction-1-5,junction-1-6,both,7,2.78,true
+edge,,road-2-0,Main aisle,,,,,,,,,road,landing-2,junction-2-0,both,20,1,true
+edge,,road-2-1,Main aisle,,,,,,,,,road,junction-2-0,junction-2-1,both,7,2.78,true
+edge,,road-2-2,Main aisle,,,,,,,,,road,junction-2-1,junction-2-2,both,7,2.78,true
+edge,,road-2-3,Main aisle,,,,,,,,,road,junction-2-2,junction-2-3,both,7,2.78,true
+edge,,road-2-4,Main aisle,,,,,,,,,road,junction-2-3,junction-2-4,both,7,2.78,true
+edge,,road-2-5,Main aisle,,,,,,,,,road,junction-2-4,junction-2-5,both,7,2.78,true
+edge,,road-2-6,Main aisle,,,,,,,,,road,junction-2-5,junction-2-6,both,7,2.78,true
+edge,,road-3-0,Main aisle,,,,,,,,,road,landing-3,junction-3-0,both,20,1,true
+edge,,road-3-1,Main aisle,,,,,,,,,road,junction-3-0,junction-3-1,both,7,2.78,true
+edge,,road-3-2,Main aisle,,,,,,,,,road,junction-3-1,junction-3-2,both,7,2.78,true
+edge,,road-3-3,Main aisle,,,,,,,,,road,junction-3-2,junction-3-3,both,7,2.78,true
+edge,,road-3-4,Main aisle,,,,,,,,,road,junction-3-3,junction-3-4,both,7,2.78,true
+edge,,road-3-5,Main aisle,,,,,,,,,road,junction-3-4,junction-3-5,both,7,2.78,true
+edge,,road-3-6,Main aisle,,,,,,,,,road,junction-3-5,junction-3-6,both,7,2.78,true
+edge,,road-4-0,Main aisle,,,,,,,,,road,landing-4,junction-4-0,both,20,1,true
+edge,,road-4-1,Main aisle,,,,,,,,,road,junction-4-0,junction-4-1,both,7,2.78,true
+edge,,road-4-2,Main aisle,,,,,,,,,road,junction-4-1,junction-4-2,both,7,2.78,true
+edge,,road-4-3,Main aisle,,,,,,,,,road,junction-4-2,junction-4-3,both,7,2.78,true
+edge,,road-4-4,Main aisle,,,,,,,,,road,junction-4-3,junction-4-4,both,7,2.78,true
+edge,,road-4-5,Main aisle,,,,,,,,,road,junction-4-4,junction-4-5,both,7,2.78,true
+edge,,road-4-6,Main aisle,,,,,,,,,road,junction-4-5,junction-4-6,both,7,2.78,true
+edge,,road-5-0,Main aisle,,,,,,,,,road,landing-5,junction-5-0,both,20,1,true
+edge,,road-5-1,Main aisle,,,,,,,,,road,junction-5-0,junction-5-1,both,7,2.78,true
+edge,,road-5-2,Main aisle,,,,,,,,,road,junction-5-1,junction-5-2,both,7,2.78,true
+edge,,road-5-3,Main aisle,,,,,,,,,road,junction-5-2,junction-5-3,both,7,2.78,true
+edge,,road-5-4,Main aisle,,,,,,,,,road,junction-5-3,junction-5-4,both,7,2.78,true
+edge,,road-5-5,Main aisle,,,,,,,,,road,junction-5-4,junction-5-5,both,7,2.78,true
+edge,,road-5-6,Main aisle,,,,,,,,,road,junction-5-5,junction-5-6,both,7,2.78,true

@@ -1,0 +1,2 @@
+﻿COMMAND: node evidence/direct-probe.mjs (exact frozen probe source)
+EXIT_STATUS: 0

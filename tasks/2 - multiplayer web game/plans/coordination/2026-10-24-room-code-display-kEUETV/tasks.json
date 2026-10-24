@@ -1,0 +1,27 @@
+{
+    "task":  "2 - multiplayer web game",
+    "work_item":  "2026-10-24-room-code-display-kEUETV",
+    "request":  "Room-created dialog still displays dashed placeholder instead of authoritative room code",
+    "stage":  "corrected_independent_browser_proof",
+    "baseline_sha":  "afd285f6c85cfa4638fbcd84973d1ae1bfa41e35",
+    "shared_project":  "C:/Users/wongn/Documents/Interview/Manus/tasks/2 - multiplayer web game/project",
+    "baseline_worktree":  ".work/worktrees/snake-room-code-baseline-20261024-kEUETV",
+    "fix_worktree":  ".work/worktrees/snake-room-code-fix-20261024-kEUETV",
+    "owner_contract":  "plans/runs/2026-10-24-room-code-display-kEUETV/plan.md",
+    "candidate_sha":  "10fab9395979a76c076c6c5474a5b1b0dce2177c",
+    "independent_verdict":  null,
+    "code_retry_count":  0,
+    "heavy_reservation":  {
+                              "stage":  "same_driver_real_welcome_baseline_candidate",
+                              "holder":  "fresh verifier corrected QA command through parent",
+                              "sample_evidence":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\coordination\\2026-10-24-room-code-display-kEUETV\\evidence\\corrected-browser-admission.json",
+                              "at":  "2026-10-24T18:31:35.1928819+08:00",
+                              "user_localhost_10000_untouched":  true
+                          },
+    "user_localhost_server":  "untouched; no task authority to kill/restart by name/port",
+    "deployment":  false,
+    "whole_game_readiness":  "previous BLOCKED/UNVERIFIED status unchanged; this is a new narrow defect scope",
+    "next_action":  "await owner frozen contract, admit separate implementer with fresh resource samples, then fresh independent same-driver baseline/candidate proof",
+    "owner_status":  "69c62b8e0456 completed: source display omission; only renderer + native regression approved",
+    "qa_preparation":  "separate independent verifier actor; text-only; no heavy reservation or mutable-product reads"
+}

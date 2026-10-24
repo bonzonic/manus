@@ -1,0 +1,101 @@
+{
+    "status":  "LOCAL TEST BUILD; native Chrome/OpenRouter/Shopee unverified",
+    "independentlyCheckedTreeFingerprint":  "51DF73DC2F5FEFFC946472F9A208AF976E40E20FAB3B188187A52C8BFC166E65",
+    "automatedTestsPassed":  34,
+    "syntaxFilesPassed":  11,
+    "nativeLiveVerified":  false,
+    "files":  [
+                  {
+                      "path":  "bridge.js",
+                      "sha256":  "22CF5FA6BA7455807275317DFBC3B92FF4BD5A4B6F680CE4874607A2E29FFCA5"
+                  },
+                  {
+                      "path":  "manifest.json",
+                      "sha256":  "17AD950A787490AB8BA67BD9AD078DCB984842BBC572F6846DC7E6CBEC091FD5"
+                  },
+                  {
+                      "path":  "package.json",
+                      "sha256":  "4CFDB8B833AA71BB0AC020E7C82A2A7301FD1A2AF5F57A91891B82856528FD03"
+                  },
+                  {
+                      "path":  "panel.css",
+                      "sha256":  "FA0563801EDB02ECB961BBA2FBF2878480F5CCEDD492D128089B09B13796B9C2"
+                  },
+                  {
+                      "path":  "panel.html",
+                      "sha256":  "2F6DB36C7BAA157DC9C23D3EB0BDE567014C4DFE9A23FF765F05D3036474F1B2"
+                  },
+                  {
+                      "path":  "panel.js",
+                      "sha256":  "C8BE0821C5FC771BD37B087BC1201CDF16A6859108441ECDAA5054CB8CC21BEF"
+                  },
+                  {
+                      "path":  "worker.js",
+                      "sha256":  "5EA0F7BD92C00E7E475F86491270C37CB43CF5A73339E0C34F83F2849FE0E48C"
+                  },
+                  {
+                      "path":  "core/contracts.js",
+                      "sha256":  "567D98DE89ABBF276D76CEFD8F793BD9E99F4FF8ACD8E339EDDBB199344724A2"
+                  },
+                  {
+                      "path":  "core/engine.js",
+                      "sha256":  "327298DC12576B3975914EACA1D8A690086FF46169712724FDB161E2187B40F2"
+                  },
+                  {
+                      "path":  "core/logger.js",
+                      "sha256":  "CFB854E971FF9A6B0A93F6E9708BC45DDC6D2821B6FFD7117A67EAF5DF9DBBC3"
+                  },
+                  {
+                      "path":  "core/model-catalog.js",
+                      "sha256":  "97296F2CF65ED9E5CA6607BF3B5B27A8B76C9CF1D4B3C272EED22079E23EE734"
+                  },
+                  {
+                      "path":  "core/model.js",
+                      "sha256":  "D1AE28430F0201308C29CC690ED8F282324BFEDAED01C3296536FDDA1C399BC7"
+                  },
+                  {
+                      "path":  "core/policy.js",
+                      "sha256":  "C765F47D6BFA65A84EBF7D3D36B5069ED92FEAB9F350DDDCA7895377409FB5B0"
+                  },
+                  {
+                      "path":  "core/shopee.js",
+                      "sha256":  "1D82392C48BD103C4F7B3A7C94453D5791CB9CF54E67EDF3EEE55CB18E535FE2"
+                  },
+                  {
+                      "path":  "core/store.js",
+                      "sha256":  "187CD69EB04AE02F2D93290CC25DA0C90D7FD17B123F22DC414A8D9C667646D6"
+                  },
+                  {
+                      "path":  "tests/engine.test.mjs",
+                      "sha256":  "45628197DACFD5CC372FC0EB9A90EA2CB551056CD5C84CFE7058F4011C602D73"
+                  },
+                  {
+                      "path":  "tests/logger.test.mjs",
+                      "sha256":  "77992DF414B7CAB4B697AC068090EDDA43F8C4E6D7A711DF9DEAAD8B44EE4D48"
+                  },
+                  {
+                      "path":  "tests/manifest.test.mjs",
+                      "sha256":  "77C282244D83E4D39746F5DD1C7A2BBFA998961A615B1BE66AF647221C2D3825"
+                  },
+                  {
+                      "path":  "tests/model.test.mjs",
+                      "sha256":  "D59AA902DAD6FA0450F0023A12A1B07D912515765ED0AC4705F003970BDFEE0E"
+                  },
+                  {
+                      "path":  "tests/policy.test.mjs",
+                      "sha256":  "6A244BD342F44F9AB477B5F3C0D843DDDBFDAF21D26560B02E8FF6F92FAA4425"
+                  },
+                  {
+                      "path":  "tests/privacy-amendment.test.mjs",
+                      "sha256":  "18E1DD839843EFBB83297EA0473617D7A1A12F563B68E105EACD8DC999A10098"
+                  },
+                  {
+                      "path":  "tests/safety-repair.test.mjs",
+                      "sha256":  "EE647DE53A65BAB10D1D8FEC43A1077BB0E083523A49A1D633EF8BB805BCC18A"
+                  },
+                  {
+                      "path":  "tests/shopee.test.mjs",
+                      "sha256":  "14FACC0B865FD13779E57C4612C3E215CD7D13C254A99963C3973E533E6E6310"
+                  }
+              ]
+}

@@ -1,0 +1,14 @@
+5. MCP server terminal controller
+Build an MCP server that lets MCP clients or agents create and control local terminal sessions. A client should be able to start commands, keep reading output, write to interactive processes, know the running state, and terminate a session when needed.
+
+It should feel like a terminal capability that an agent can use reliably, not just a single shell command wrapped as an MCP tool.
+
+You can also consider a more direct usage and validation scenario: can this MCP server be connected to any MCP client (for example Manus) so that the client creates and controls terminal sessions through it?
+
+Things worth thinking about:
+
+MCP interface design: which tools to provide, how to design parameters and return structures, and how to make it easy for an agent to understand them and combine calls correctly;
+Terminal session model: how to manage session IDs, PTYs, working directory, environment variables, stdout, stderr, exit status and interactive input;
+Long-running tasks and incremental output: how to keep reading without blocking, how to paginate or use cursors, and how to bound memory and handle timeouts and cancellation;
+Concurrency and lifecycle: how multiple sessions are isolated, and how to clean up and recover after a client disconnects, a process exits, zombie processes appear or the server restarts;
+Security boundaries: how to handle the scope of command execution, working directories, sensitive environment variables, dangerous commands, user approval and audit records.

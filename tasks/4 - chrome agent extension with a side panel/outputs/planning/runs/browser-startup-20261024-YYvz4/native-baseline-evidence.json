@@ -1,0 +1,57 @@
+{
+  "status": "BLOCKED",
+  "driver": "Puppeteer",
+  "puppeteerVersion": "24.26.1",
+  "chromeExecutable": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\4 - chrome agent extension with a side panel\\.work\\tools\\puppeteer-cache\\chrome\\win64-141.0.7390.122\\chrome-win64\\chrome.exe",
+  "bundledChromeVersion": "141.0.7390.122",
+  "bundledChromeVersionSource": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\4 - chrome agent extension with a side panel\\.work\\tools\\puppeteer-cache\\chrome\\win64-141.0.7390.122\\141.0.7390.122.manifest",
+  "headlessMode": "new",
+  "launchFlags": ["--no-sandbox", "--disable-gpu", "--disable-crash-reporter", "--disable-breakpad"],
+  "extensionPath": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\4 - chrome agent extension with a side panel\\.work\\worktrees\\toolbar-20261024-YYvz4\\extension",
+  "syntheticProfile": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\4 - chrome agent extension with a side panel\\.work\\profiles\\toolbar-startup-cft-20261024-YYvz4-headless",
+  "serviceWorkerBootstrap": "NOT_RUN: Puppeteer could not obtain a browser connection/service-worker target; no worker, manifest, or Side Panel API state was observed.",
+  "target": null,
+  "manifest": null,
+  "sidePanelOptions": null,
+  "sidePanelBehavior": null,
+  "panelMessage": null,
+  "ordinaryPanelTab": null,
+  "nativeToolbarClick": {
+    "status": "NOT_RUN",
+    "reason": "Puppeteer 24.26.1 public API/types expose extension loading and ExtensionTransport, but no documented extension.action or triggerAction/native browser-toolbar click capability. New-headless mode cannot prove native toolbar rendering, and no unsupported CDP method was guessed or invoked."
+  },
+  "apiInspection": {
+    "exportedNamesMatchingExtensionOrAction": [],
+    "constructorPrototypeMethodsMatchingExtensionOrAction": [],
+    "documentedNativeToolbarActionCapability": false
+  },
+  "launchObservation": "CFT emitted DevTools listening, then the Puppeteer connection failed and surfaced its Windows lockfile guard. Earlier headful attempts also recorded sandbox/GPU policy errors. This is a driver/device blocker, not proof of extension behavior.",
+  "workerErrors": [
+    {
+      "source": "probe",
+      "message": "Puppeteer BrowserLauncher reported: The browser is already running for the disposable synthetic profile. Use a different userDataDir or stop the running browser first. No service-worker target was exposed."
+    },
+    {
+      "source": "environment",
+      "message": "CFT logs reported geolocation IAppCapability access denied; earlier headful runs reported sandbox executable access denied and GPU process unusable."
+    }
+  ],
+  "processCleanup": {
+    "browserClosed": false,
+    "browserPidAtStart": null,
+    "postRunMatchingCftProcess": false,
+    "postRunTaskOwnedBrowserProcessRemaining": false
+  },
+  "notRun": [
+    "native toolbar action",
+    "native Chrome Side Panel visibility",
+    "service-worker bootstrap observation",
+    "worker error/console event capture"
+  ],
+  "prohibitedActions": [
+    "No real Chrome profile or CDP attachment",
+    "No provider/account/cart/checkout/payment action",
+    "No panel.html tab counted as native success",
+    "No product-code modification"
+  ]
+}

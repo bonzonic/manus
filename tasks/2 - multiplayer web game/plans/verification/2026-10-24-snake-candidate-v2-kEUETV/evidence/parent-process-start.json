@@ -1,0 +1,10 @@
+{
+    "status":  "STARTED",
+    "pid":  11316,
+    "started_at":  "2026-10-24T17:54:42.6920985+08:00",
+    "candidate_sha":  "afd285f6c85cfa4638fbcd84973d1ae1bfa41e35",
+    "candidate_project":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-mvp-verifier-v2-20261024-kEUETV\\project",
+    "driver":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-snake-candidate-v2-kEUETV\\snake-verifier-v2.mjs",
+    "playwright_root":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\tools\\browser-qa\\node_modules\\playwright",
+    "note":  "Correct actual task-local module root, replacing the QA command document erroneous repository-root tool path; no product mutation"
+}

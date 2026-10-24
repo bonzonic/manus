@@ -1,0 +1,35 @@
+{
+  "status": "EXITED",
+  "conduitPid": 11316,
+  "parentPid": 37224,
+  "startedAt": "2026-10-24T09:54:42.811Z",
+  "finishedAt": "2026-10-24T09:54:56.798Z",
+  "exitCode": 1,
+  "signal": null,
+  "ownedProcesses": [
+    {
+      "pid": 11316,
+      "role": "in-process-candidate-server",
+      "start": "2026-10-24T09:54:43.314Z",
+      "exact": true,
+      "exit": {
+        "observed": true,
+        "inProcessClose": true,
+        "pid": 11316
+      }
+    },
+    {
+      "pid": 59852,
+      "role": "playwright-chrome-server",
+      "start": "2026-10-24T09:54:43.810Z",
+      "exact": true,
+      "exit": {
+        "pid": 59852,
+        "observed": true,
+        "exitCode": 0,
+        "signal": null
+      }
+    }
+  ],
+  "note": "Only exact task-owned handles/processes may be closed; no name-based cleanup."
+}

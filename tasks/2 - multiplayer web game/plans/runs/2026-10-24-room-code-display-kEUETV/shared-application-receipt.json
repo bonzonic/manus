@@ -1,0 +1,32 @@
+{
+    "applied_at":  "2026-10-24T18:33:45.5379024+08:00",
+    "scope":  "room-code display defect only",
+    "independent_verdict":  "PASS",
+    "baseline":  "afd285f6c85cfa4638fbcd84973d1ae1bfa41e35",
+    "candidate":  "10fab9395979a76c076c6c5474a5b1b0dce2177c",
+    "shared_destination":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\project",
+    "before":  [
+                   {
+                       "path":  "public/dom-renderer.js",
+                       "before_sha256":  "8ED0A11D23777C0FC3AA9E7A254D59148FA0DC05652FCA5D340AFF730AFFA878"
+                   },
+                   {
+                       "path":  "test/client/room-code-display.test.js",
+                       "before_sha256":  null
+                   }
+               ],
+    "after":  [
+                  {
+                      "path":  "public/dom-renderer.js",
+                      "sha256":  "13C13904FC5E27697A21439D6CA3C744E56FD2B9955A1B486CC541035DCB8DA5",
+                      "matches_immutable_candidate":  true
+                  },
+                  {
+                      "path":  "test/client/room-code-display.test.js",
+                      "sha256":  "E227EF97539F11B65FF1D770AB3A749881045C6F766CE6049C80187DC348B801",
+                      "matches_immutable_candidate":  true
+                  }
+              ],
+    "user_running_server_restarted":  false,
+    "deployment":  false
+}

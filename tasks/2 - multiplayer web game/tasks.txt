@@ -1,0 +1,11 @@
+2. Multiplayer web game
+Build a real-time multiplayer game that can be played directly in the browser. At least two players can enter the same match, see each other's actions, and go through the full flow of joining, starting, playing, and finishing or playing again. The game genre and mechanics are up to you.
+
+It must be a truly networked product, not two unrelated local game screens. The gameplay does not need to be complex, but it should make people want to finish a match and let them feel the fun of playing with another real person.
+
+Things worth thinking about:
+
+Getting into a game: how to create or join a room, how to invite the other player, whether accounts are needed, and how two people can start their first match as quickly as possible;
+Core gameplay and feedback: whether the rules are easy to understand, the controls feel good, winning and losing are clear, and how visuals, animation, sound and pacing together create a sense of play;
+Quality of real-time sync: who is authoritative over the state, and how to handle network latency, duplicate actions, out-of-order events, cheating, and the two sides seeing different results;
+Room and player lifecycle: what should happen on refresh, disconnect, reconnect, leaving, joining mid-game, and restarting.

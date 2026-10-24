@@ -1,0 +1,11 @@
+{
+  "name": "Wayfinder Grid",
+  "short_name": "Wayfinder Grid",
+  "description": "A two-player authoritative Snake match on a finite field.",
+  "lang": "en",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101827",
+  "theme_color": "#101827",
+  "icons": []
+}

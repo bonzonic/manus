@@ -1,0 +1,48 @@
+{
+  "work_item": "2026-10-24-snake-mvp-kEUETV",
+  "lane": "distinct-om-implementer-repair1",
+  "baseline_sha": "eebdb1d9408a2002c5971d7c8b4f15ba1f558bed",
+  "v2_sha": null,
+  "worktree": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-mvp-repair-20261024-kEUETV\\project",
+  "changed_files": [
+    "public/app.js",
+    "public/client-model.js",
+    "public/dom-renderer.js",
+    "server/authoritative-server.js",
+    "server/index.js",
+    "server/rooms/room-manager.js",
+    "test/client/integration-ui-seam.test.js",
+    "test/client/recovery-model.test.js",
+    "test/client/recovery-renderers.test.js",
+    "test/rooms/recovery-admission.test.js",
+    "test/rooms/recovery-lifecycle-rematch.test.js",
+    "test/transport/recovery-room-play-rematch.test.js"
+  ],
+  "sha256": {
+    "server/index.js": "F9BE7B62FF28AA73B517EF3AFFC461E7F22FA94EAAAC91E8C67EE7570D48C706",
+    "server/rooms/room-manager.js": "71A6C489AF2E2BF4BCC199105CCC5665ADA67418CE52F714F391BE20EB00D964",
+    "server/authoritative-server.js": "7AE0347F9E13BB7E81FFD821D1E282FFED3BAE9EB4252492240FF08994FABD11",
+    "public/app.js": "AE5CA4B640A925B27418F19B57C3CC39764EAD06BC0BBE2F4A1771F189C206FC",
+    "public/client-model.js": "DCAFF68411519D6177A10AC4C708B10142F83F0D73E097C42FDFD9F98BD62227",
+    "public/dom-renderer.js": "CAAA3D660F8EEB6C34E73D5A0D4ABE7E58C6FE6119EDC34A146B05F7F1A36971",
+    "test/rooms/recovery-admission.test.js": "B900CA5B878EB9BE58E7FDD837DF155E50DD2533849C14260045EA9090EDD2B3",
+    "test/rooms/recovery-lifecycle-rematch.test.js": "605685B8726E3D078066862CDC745B0A7355F209DE6A531320AD098E8FC27F0C",
+    "test/transport/recovery-room-play-rematch.test.js": "241191D79E7AA43A480F4921BF71043328852BC5F54DC41F41759B142FF32E3E",
+    "test/client/recovery-model.test.js": "E2EFA218CC31AC6D01732E1D4F0E85FC080E36DEC6341191E5B01BB1BFC82C15",
+    "test/client/recovery-renderers.test.js": "2F3B1EF16FE3307E67DD35415469BD5795A4AE2C55704735F891B23D846D6A53",
+    "test/client/integration-ui-seam.test.js": "4B902CE476BC867C06D9CF4FE7CA1E7F16066244D432704D3EA927184F0AA2A7"
+  },
+  "test_results": {
+    "rooms": "PASS: 8/8",
+    "security": "PASS: 3/3",
+    "client": "PASS: 8/8",
+    "transport": "DEFERRED: all five subtests hit Windows EACCES on child localhost sockets before assertions"
+  },
+  "parent_required": [
+    "Run deferred-localhost-transport.ps1 in an admitted localhost/conduit environment.",
+    "Capture task-owned process/startup/exit receipts.",
+    "Commit exactly changed_files and record the new v2 SHA.",
+    "Dispatch a fresh independent verifier; do not treat this report as verification or S10 evidence."
+  ],
+  "processes_remaining": []
+}

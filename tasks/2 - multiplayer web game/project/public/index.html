@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Wayfinder Grid — a two-player authoritative Snake match.">
+  <title>Wayfinder Grid · Multiplayer Snake</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-phase="LOBBY">
+  <div id="app-shell" class="app-shell">
+    <header class="match-bar" aria-label="Match status">
+      <a class="brand-mark" href="/" aria-label="Wayfinder Grid home">
+        <span class="brand-mark__glyph" aria-hidden="true">
+          <svg viewBox="0 0 32 32" role="img"><use href="/assets/shapes.svg#wayfinder-glyph"></use></svg>
+        </span>
+        <span class="brand-mark__copy"><strong>Wayfinder Grid</strong><small>two-player field guide</small></span>
+      </a>
+      <div class="match-strip match-strip--room" aria-label="Room invitation">
+        <span class="strip-label">Room</span>
+        <output id="room-code" class="room-code" aria-label="Room code">--------</output>
+        <button id="copy-invite" class="button button--quiet" type="button" aria-label="Copy room invite">Copy invite</button>
+      </div>
+      <div class="match-strip" aria-label="Round phase">
+        <span class="strip-label">Phase</span>
+        <span id="round-phase" class="status-chip status-chip--phase">LOBBY</span>
+        <span id="countdown-label" class="strip-detail">Waiting for teammate</span>
+      </div>
+      <div class="match-strip match-strip--connection" aria-label="Connection state">
+        <span id="connection-chip" class="status-chip status-chip--offline"><span class="status-dot" aria-hidden="true"></span>Offline</span>
+        <span id="latency-note" class="strip-detail">Not connected</span>
+      </div>
+    </header>
+
+    <main class="game-layout">
+      <section class="arena-card" aria-labelledby="arena-title">
+        <div class="section-heading section-heading--arena">
+          <div>
+            <p class="eyebrow">Live field · 40 × 24</p>
+            <h1 id="arena-title">The grid is waiting for two wayfinders.</h1>
+          </div>
+          <span class="field-note">finite field / server-led</span>
+        </div>
+        <div id="arena-frame" class="arena-frame" data-board-width="40" data-board-height="24">
+          <canvas id="arena-canvas" width="1200" height="720" role="img" aria-label="Snake arena, 40 columns by 24 rows"></canvas>
+          <div id="countdown-overlay" class="board-overlay board-overlay--countdown" hidden aria-live="polite">
+            <span class="overlay-kicker">Both players ready</span>
+            <strong>Starting in <span id="countdown-number">3</span></strong>
+            <span class="overlay-caption">The board is frozen until the server starts the round.</span>
+          </div>
+          <div id="pause-overlay" class="board-overlay board-overlay--pause" hidden aria-live="polite">
+            <span class="overlay-kicker">Match paused</span>
+            <strong id="pause-title">A wayfinder is reconnecting.</strong>
+            <span id="pause-message" class="overlay-caption">Bodies and active time are frozen. No result has been declared.</span>
+          </div>
+          <p id="game-announcement" class="game-announcement" aria-live="polite">Create a room or join a teammate to begin.</p>
+        </div>
+        <div id="arena-focus-target" class="arena-focus-target" tabindex="0" aria-label="Arena keyboard focus target">
+          <span class="focus-marker" aria-hidden="true">⌖</span>
+          <span>Focus the arena, then use arrows or W A S D to turn.</span>
+        </div>
+      </section>
+
+      <aside id="hud" class="match-rail" aria-label="Match controls and player details">
+        <section class="rail-section rail-section--players" aria-labelledby="players-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Two seats</p>
+              <h2 id="players-title">Wayfinders</h2>
+            </div>
+            <span class="seat-count">2 max</span>
+          </div>
+          <div class="player-stack">
+            <article id="player-one-card" class="player-card player-card--one" data-seat="P1" aria-label="Player 1 seat">
+              <div class="player-card__topline">
+                <div class="player-identity">
+                  <span class="player-marker player-marker--one" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="/assets/shapes.svg#player-one-head"></use></svg></span>
+                  <div><span class="player-seat">Player 1</span><strong class="player-name">You</strong></div>
+                </div>
+                <span class="you-badge">You</span>
+              </div>
+              <div class="player-state"><span class="state-dot state-dot--coral" aria-hidden="true"></span><span>Not ready</span></div>
+              <dl class="player-stats">
+                <div><dt>Length</dt><dd id="length-player-one">—</dd></div>
+                <div><dt>Apples</dt><dd id="apples-player-one">—</dd></div>
+                <div class="stat--boost"><dt>Boost</dt><dd id="boost-player-one" aria-label="Player 1 boost status">—</dd></div>
+              </dl>
+            </article>
+            <article id="player-two-card" class="player-card player-card--two" data-seat="P2" aria-label="Player 2 seat">
+              <div class="player-card__topline">
+                <div class="player-identity">
+                  <span class="player-marker player-marker--two" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="/assets/shapes.svg#player-two-head"></use></svg></span>
+                  <div><span class="player-seat">Player 2</span><strong class="player-name">Waiting for teammate</strong></div>
+                </div>
+                <span class="remote-badge">Remote</span>
+              </div>
+              <div class="player-state"><span class="state-dot state-dot--mint" aria-hidden="true"></span><span>Not connected</span></div>
+              <dl class="player-stats">
+                <div><dt>Length</dt><dd id="length-player-two">—</dd></div>
+                <div><dt>Apples</dt><dd id="apples-player-two">—</dd></div>
+                <div class="stat--boost"><dt>Boost</dt><dd id="boost-player-two" aria-label="Player 2 boost status">—</dd></div>
+              </dl>
+            </article>
+          </div>
+        </section>
+
+        <section class="rail-section controls-card" aria-labelledby="controls-title">
+          <div class="section-heading section-heading--compact">
+            <div><p class="eyebrow">Steering</p><h2 id="controls-title">Make a turn</h2></div>
+            <span id="turn-queue" class="queue-chip" aria-label="Turn queue status">Turn queue 0/2</span>
+          </div>
+          <p id="keyboard-help" class="helper-copy">Keyboard first: focus the arena, then use arrows or W A S D. Turns are confirmed by the server.</p>
+          <div id="direction-pad" class="direction-pad" aria-label="Direction pad">
+            <span class="pad-spacer" aria-hidden="true"></span>
+            <button class="direction-button" type="button" data-direction="UP" aria-label="Turn up" disabled><span aria-hidden="true">↑</span><span class="sr-only">Up</span></button>
+            <span class="pad-spacer" aria-hidden="true"></span>
+            <button class="direction-button" type="button" data-direction="LEFT" aria-label="Turn left" disabled><span aria-hidden="true">←</span><span class="sr-only">Left</span></button>
+            <button class="direction-button" type="button" data-direction="DOWN" aria-label="Turn down" disabled><span aria-hidden="true">↓</span><span class="sr-only">Down</span></button>
+            <button class="direction-button" type="button" data-direction="RIGHT" aria-label="Turn right" disabled><span aria-hidden="true">→</span><span class="sr-only">Right</span></button>
+          </div>
+        </section>
+
+        <section id="rules-card" class="rail-section rules-card" aria-labelledby="rules-title">
+          <div class="section-heading section-heading--compact"><div><p class="eyebrow">Field notes</p><h2 id="rules-title">Rules at a glance</h2></div></div>
+          <ul class="rules-list">
+            <li><span class="rule-mark rule-mark--grid" aria-hidden="true"></span><span>40 × 24 finite grid</span></li>
+            <li><span class="rule-mark rule-mark--apple" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="/assets/shapes.svg#apple-mark"></use></svg></span><span>Apples grow one segment</span></li>
+            <li><span class="rule-mark rule-mark--mushroom" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="/assets/shapes.svg#mushroom-mark"></use></svg></span><span>Mushrooms boost speed</span></li>
+            <li><span class="rule-mark rule-mark--ready" aria-hidden="true"></span><span>Both players ready to start</span></li>
+          </ul>
+        </section>
+
+        <section id="lifecycle-card" class="rail-section lifecycle-card" aria-labelledby="lifecycle-title">
+          <div class="section-heading section-heading--compact"><div><p class="eyebrow">Match status</p><h2 id="lifecycle-title">Stay in sync</h2></div></div>
+          <p>Disconnects pause the board. The server keeps the round honest and never invents a result.</p>
+          <span class="lifecycle-note"><span class="status-dot status-dot--mint" aria-hidden="true"></span>Waiting for a shared room</span>
+        </section>
+      </aside>
+    </main>
+
+    <div id="modal-layer" class="modal-layer" aria-live="polite">
+      <section id="entry-panel" class="modal-panel modal-panel--entry" aria-labelledby="entry-title">
+        <div class="modal-panel__stamp"><span class="stamp-dot" aria-hidden="true"></span>Guest match · no account needed</div>
+        <div class="modal-panel__copy">
+          <p class="eyebrow">A shared field for two</p>
+          <h2 id="entry-title">Find your way<br><em>through the grid.</em></h2>
+          <p>Start a room, share one invite, and meet your teammate on a finite field. Every turn and result is agreed by the match server.</p>
+        </div>
+        <div class="entry-actions">
+          <button id="create-room-button" class="button button--primary button--wide" type="button"><span class="button-icon" aria-hidden="true">+</span>Create a room</button>
+          <div class="entry-divider"><span>or join a teammate</span></div>
+          <form id="join-room-panel" class="join-form" data-mode="JOIN" hidden>
+            <label for="join-room-code">Eight-character room code</label>
+            <div class="input-row"><input id="join-room-code" name="roomCode" type="text" inputmode="text" autocomplete="off" maxlength="8" pattern="[A-Za-z0-9]{8}" placeholder="AB12CD34"><button class="button button--secondary" type="submit">Join room</button></div>
+          </form>
+          <button id="paste-invite-link" class="button button--text" type="button"><span aria-hidden="true">↗</span>Paste an invite link</button>
+        </div>
+        <p class="entry-footnote"><span class="legend-line" aria-hidden="true"></span>Four directions · apples grow · mushrooms boost · both players ready</p>
+      </section>
+
+      <section id="lobby-panel" class="modal-panel modal-panel--lobby" aria-labelledby="lobby-title" hidden>
+        <p class="eyebrow">Room created</p>
+        <h2 id="lobby-title">Your field is ready.</h2>
+        <p>Share the eight-character code or invite link with one teammate. A match starts only when both seats choose <strong>Ready up</strong>.</p>
+        <div class="lobby-room-code"><span>Room code</span><strong data-copy-source="room-code">--------</strong></div>
+        <button id="ready-button" class="button button--primary button--wide" type="button" disabled>Ready up</button>
+        <p class="lobby-status"><span class="status-dot status-dot--saffron" aria-hidden="true"></span><span>Waiting for a teammate to join</span></p>
+      </section>
+
+      <section id="results-panel" class="modal-panel modal-panel--results" aria-labelledby="result-title" hidden aria-live="assertive">
+        <p class="eyebrow">Round complete</p>
+        <h2 id="result-title">The server has the result.</h2>
+        <p id="result-reason">Results will appear here after the final authoritative step.</p>
+        <div class="result-scoreboard">
+          <div id="result-player-one" class="result-player result-player--one"><span>Player 1</span><strong>—</strong><small>Length · Apples</small></div>
+          <div class="result-divider" aria-hidden="true">vs</div>
+          <div id="result-player-two" class="result-player result-player--two"><span>Player 2</span><strong>—</strong><small>Length · Apples</small></div>
+        </div>
+        <div id="rematch-panel" class="rematch-panel" aria-label="Rematch status">
+          <button id="rematch-button" class="button button--primary button--wide" type="button" disabled>Play again</button>
+          <p id="rematch-status">Both players can opt in to a new round.</p>
+        </div>
+      </section>
+
+      <section id="error-panel" class="modal-panel modal-panel--error" aria-labelledby="error-title" hidden aria-live="assertive">
+        <span class="error-glyph" aria-hidden="true">!</span>
+        <p class="eyebrow">Room signal</p>
+        <h2 id="error-title">This room needs attention.</h2>
+        <p id="error-message">The invite is unavailable. Create a new room or check the code and try again.</p>
+        <button id="error-action" class="button button--primary button--wide" type="button">Create a new room</button>
+      </section>
+    </div>
+  </div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

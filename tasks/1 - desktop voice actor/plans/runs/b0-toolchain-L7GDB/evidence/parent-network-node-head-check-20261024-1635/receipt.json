@@ -1,0 +1,62 @@
+{
+  "schema": "b0-parent-network-node-head-receipt-v1",
+  "generatedAt": "2026-10-24T08:36:11.110Z",
+  "client": {
+    "module": "node:https",
+    "runtime": "v22.12.0",
+    "platform": "win32",
+    "arch": "x64",
+    "openssl": "3.0.15+quic",
+    "method": "HEAD",
+    "tls": "Node defaults: normal certificate-chain and hostname validation; no custom CA",
+    "credentials": "none supplied or read"
+  },
+  "bounds": {
+    "maxMsPerTarget": 10000,
+    "maxRedirects": 5,
+    "redirectPolicy": "HTTPS only; allowlisted official Microsoft hosts only",
+    "responseBodies": "not read, buffered, or saved"
+  },
+  "targets": [
+    "https://dot.net/v1/dotnet-install.ps1",
+    "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/10.0/releases.json"
+  ],
+  "results": [
+    {
+      "target": "https://dot.net/v1/dotnet-install.ps1",
+      "startedAt": "2026-10-24T08:36:09.391Z",
+      "endedAt": "2026-10-24T08:36:10.339Z",
+      "elapsedMs": 949,
+      "ok": true,
+      "statusCode": 200,
+      "headers": {
+        "content-length": "76676",
+        "content-type": "application/octet-stream",
+        "etag": "0x8DEE76C583DA452",
+        "last-modified": "Tue, 21 Jul 2026 21:09:25 GMT"
+      },
+      "finalUrl": "https://builds.dotnet.microsoft.com/dotnet/scripts/v1/dotnet-install.ps1",
+      "redirects": [
+        "https://builds.dotnet.microsoft.com/dotnet/scripts/v1/dotnet-install.ps1"
+      ]
+    },
+    {
+      "target": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/10.0/releases.json",
+      "startedAt": "2026-10-24T08:36:10.340Z",
+      "endedAt": "2026-10-24T08:36:11.110Z",
+      "elapsedMs": 770,
+      "ok": true,
+      "statusCode": 200,
+      "headers": {
+        "content-length": "1100901",
+        "content-type": "application/json",
+        "etag": "0x8DF296397676D3B",
+        "last-modified": "Tue, 13 Oct 2026 19:53:02 GMT"
+      },
+      "finalUrl": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/10.0/releases.json",
+      "redirects": []
+    }
+  ],
+  "diagnosticOnly": true,
+  "noAcquisitionRestoreBuild": true
+}

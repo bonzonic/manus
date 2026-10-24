@@ -1,0 +1,48 @@
+{
+  "manifest_version": "offline-b0-corpus-v1",
+  "status": "PENDING",
+  "contract": "offline-b0-speech-v1",
+  "required_counts": {
+    "english": 30,
+    "mandarin": 30,
+    "mixed": 30,
+    "total": 90
+  },
+  "expected_item_ids": {
+    "english": "en-01..en-30",
+    "mandarin": "zh-01..zh-30",
+    "mixed": "mix-01..mix-30"
+  },
+  "source_policy": {
+    "public_dataset": "pin immutable revision, item ID, license/notice, audio SHA-256, and gold transcript; no public-license claim without item-level audit",
+    "local_consented_read": "requires explicit non-content consent_id and bounded retention/deletion record; one continuous utterance per item; no bystanders",
+    "smoke_examples": "never count repeated, sliced, concatenated, or official Paraformer smoke WAV examples as quality items"
+  },
+  "item_template": {
+    "item_id": "en-01",
+    "condition": "english|mandarin|mixed",
+    "gold_transcript": "required exact source text or read-sheet line",
+    "source_type": "public_dataset|local_consented_read",
+    "source_name": "FLEURS|Common Voice|local-read-sheet|other separately admitted source",
+    "source_revision": "required immutable release/commit or N/A for local read-sheet",
+    "source_item_id": "required for public dataset or N/A for local read-sheet",
+    "source_license": "CC-BY-4.0|CC0-1.0|local-consent-only|separately admitted terms",
+    "consent_id": "required for local capture; public permission record for public audio",
+    "audio_path": "separately admitted bounded benchmark folder only",
+    "audio_sha256": "required",
+    "sample_rate_hz": "record actual validated format",
+    "channels": "record actual validated format",
+    "bits_per_sample": "record actual validated format",
+    "duration_ms": "record actual",
+    "speech_onset_ms": "monotonic benchmark metadata",
+    "gold_tags": ["proper_name", "number", "negation", "punctuation", "switch", "technical"],
+    "retention_delete_at": "required for local capture"
+  },
+  "validation": {
+    "unique_item_ids": true,
+    "one_utterance_per_item": true,
+    "no_audio_downloaded_or_captured_in_preparation_stage": true,
+    "missing_assets_or_consent_result": "PENDING or BLOCKED, never synthetic PASS",
+    "csv_companion": "corpus-manifest.template.csv"
+  }
+}

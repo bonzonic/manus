@@ -1,0 +1,4 @@
+item_id,condition,gold_transcript,source_type,source_name,source_revision,source_item_id,source_license,consent_id,audio_path,audio_sha256,sample_rate_hz,channels,bits_per_sample,duration_ms,speech_onset_ms,gold_tags
+en-01,english,"Please send the revised invoice to Maya Chen today.",public_dataset,FLEURS,PENDING,PENDING,CC-BY-4.0,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,"proper_name;punctuation"
+zh-01,mandarin,"请把修改后的发票今天发给陈美雅。",public_dataset,FLEURS,PENDING,PENDING,CC-BY-4.0,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,"proper_name;punctuation"
+mix-01,mixed,"请把 revised invoice 今天发给 Maya Chen。",local_consented_read,local-read-sheet,N/A,mix-01,local-consent-only,PENDING_CONSENT,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,PENDING,"proper_name;switch;punctuation"

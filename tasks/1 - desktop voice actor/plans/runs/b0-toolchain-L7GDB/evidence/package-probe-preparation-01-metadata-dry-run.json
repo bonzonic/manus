@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "nuget-metadata-manifest-receipt-v2",
+  "mode": "metadata-only",
+  "executionAttempted": false,
+  "downloadAttempted": false,
+  "packages": [
+    {
+      "schemaVersion": "nuget-metadata-receipt-v2",
+      "mode": "metadata-only",
+      "source": "bounded-local-fixture",
+      "registrationUrl": "https://api.nuget.org/v3-registration5-gz-semver2/naudio.wasapi/3.3.0.json",
+      "redirects": [
+        "https://api.nuget.org/v3-registration5-gz-semver2/naudio.wasapi/3.3.0.json"
+      ],
+      "metadataBytes": 961,
+      "retrievedAt": "2026-10-24T09:32:34.922Z",
+      "package": {
+        "id": "NAudio.Wasapi",
+        "version": "3.3.0",
+        "listed": true,
+        "isPrerelease": false,
+        "license": "MIT",
+        "registrationUrl": "https://api.nuget.org/v3-registration5-gz-semver2/naudio.wasapi/3.3.0.json",
+        "catalogUrl": "https://api.nuget.org/v3/catalog0/data/2026.10.19.21.30.18/naudio.wasapi.3.3.0.json",
+        "contentUrl": "https://api.nuget.org/v3-flatcontainer/naudio.wasapi/3.3.0/naudio.wasapi.3.3.0.nupkg",
+        "officialSha512Hex": "77fa3ed3758b979eb6a1ed12059ea701cff6e675c863a0017c13ec3b6b82b5a1ff8da5ee3ceac50d7de8522f80928f014af1618f764114b2297252db7ec1ddb8",
+        "officialPackageBytes": null,
+        "dependencyGroups": [
+          {
+            "targetFramework": "net9.0",
+            "dependencies": [
+              {
+                "id": "NAudio.Core",
+                "range": "[3.3.0, )"
+              }
+            ]
+          }
+        ]
+      },
+      "executionAttempted": false,
+      "downloadAttempted": false,
+      "rawMetadataPreserved": true
+    },
+    {
+      "schemaVersion": "nuget-metadata-receipt-v2",
+      "mode": "metadata-only",
+      "source": "bounded-local-fixture",
+      "registrationUrl": "https://api.nuget.org/v3-registration5-gz-semver2/org.k2fsa.sherpa.onnx/2.0.0.json",
+      "redirects": [
+        "https://api.nuget.org/v3-registration5-gz-semver2/org.k2fsa.sherpa.onnx/2.0.0.json"
+      ],
+      "metadataBytes": 1187,
+      "retrievedAt": "2026-10-24T09:32:34.923Z",
+      "package": {
+        "id": "org.k2fsa.sherpa.onnx",
+        "version": "2.0.0",
+        "listed": true,
+        "isPrerelease": false,
+        "license": "Apache-2.0",
+        "registrationUrl": "https://api.nuget.org/v3-registration5-gz-semver2/org.k2fsa.sherpa.onnx/2.0.0.json",
+        "catalogUrl": "https://api.nuget.org/v3/catalog0/data/2026.10.23.15.31.08/org.k2fsa.sherpa.onnx.2.0.0.json",
+        "contentUrl": "https://api.nuget.org/v3-flatcontainer/org.k2fsa.sherpa.onnx/2.0.0/org.k2fsa.sherpa.onnx.2.0.0.nupkg",
+        "officialSha512Hex": "d9aafb094407b2c98155ea76f296943de81fe8f1d3464e8575d8a3af9dde35ad854321d660158cbbad768c2e629916aaf0f05a0a3842e97a246c0ce7e5daa6ae",
+        "officialPackageBytes": null,
+        "dependencyGroups": [
+          {
+            "targetFramework": "net10.0",
+            "dependencies": [
+              {
+                "id": "org.k2fsa.sherpa.onnx.runtime.win-x64",
+                "range": "[2.0.0, )"
+              },
+              {
+                "id": "org.k2fsa.sherpa.onnx.runtime.linux-x64",
+                "range": "[2.0.0, )"
+              },
+              {
+                "id": "org.k2fsa.sherpa.onnx.runtime.osx-x64",
+                "range": "[2.0.0, )"
+              }
+            ]
+          }
+        ]
+      },
+      "executionAttempted": false,
+      "downloadAttempted": false,
+      "rawMetadataPreserved": true
+    },
+    {
+      "schemaVersion": "nuget-metadata-receipt-v2",
+      "mode": "metadata-only",
+      "source": "bounded-local-fixture",
+      "registrationUrl": "https://api.nuget.org/v3-registration5-gz-semver2/org.k2fsa.sherpa.onnx.runtime.win-x64/2.0.0.json",
+      "redirects": [
+        "https://api.nuget.org/v3-registration5-gz-semver2/org.k2fsa.sherpa.onnx.runtime.win-x64/2.0.0.json"
+      ],
+      "metadataBytes": 903,
+      "retrievedAt": "2026-10-24T09:32:34.924Z",
+      "package": {
+        "id": "org.k2fsa.sherpa.onnx.runtime.win-x64",
+        "version": "2.0.0",
+        "listed": true,
+        "isPrerelease": false,
+        "license": "Apache-2.0",
+        "registrationUrl": "https://api.nuget.org/v3-registration5-gz-semver2/org.k2fsa.sherpa.onnx.runtime.win-x64/2.0.0.json",
+        "catalogUrl": null,
+        "contentUrl": "https://api.nuget.org/v3-flatcontainer/org.k2fsa.sherpa.onnx.runtime.win-x64/2.0.0/org.k2fsa.sherpa.onnx.runtime.win-x64.2.0.0.nupkg",
+        "officialSha512Hex": null,
+        "officialPackageBytes": null,
+        "dependencyGroups": []
+      },
+      "executionAttempted": false,
+      "downloadAttempted": false,
+      "rawMetadataPreserved": true
+    }
+  ]
+}

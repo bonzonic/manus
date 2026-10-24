@@ -1,0 +1,12 @@
+1. Desktop voice input
+Build a desktop voice input product. In any application, the user presses a global keyboard shortcut and simply starts talking; the product recognizes the speech, turns it into text suitable for written communication, and inserts it into the input field that is currently active on the system.
+
+It should not be just a speech-to-text page. It should become an input method that feels natural across different desktop applications.
+
+Things worth thinking about:
+
+Onboarding: how the user grants permissions such as microphone and accessibility, how the shortcut is set up, and how the user succeeds on their very first try;
+Shortcut and voice input experience: the trade-offs between push-to-talk, press-once-to-start and other approaches; how to show the current state; how to cancel, edit or avoid accidental triggers;
+Speech recognition quality and performance: latency to the first word, speed of the full result, accuracy, multiple languages and mixed Chinese-English speech, punctuation and formatting, memory of proper nouns or a personal dictionary;
+Text processing and insertion: how to turn spoken language into appropriate text, how to reliably find the current input focus and insert the content, and how to degrade gracefully in unsupported applications;
+Privacy and trust: when recording starts, whether audio and history are kept, and how the user clearly perceives and controls these behaviors.

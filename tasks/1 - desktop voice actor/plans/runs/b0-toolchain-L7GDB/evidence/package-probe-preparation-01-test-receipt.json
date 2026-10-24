@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "package-probe-test-receipt-v2",
+  "workItem": "b0-toolchain-L7GDB",
+  "baseline": "0c3155d560692d4042c5fdb7cb6a569cbf4c0cee",
+  "testFile": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\acquisition\\nuget\\nuget-acquisition-helper.test.js",
+  "runner": "Node.js built-in node:test; no package installation",
+  "red": {
+    "command": "node --test .\\.work\\acquisition\\nuget\\nuget-acquisition-helper.test.js",
+    "exitCode": 1,
+    "tests": 8,
+    "passed": 0,
+    "failed": 8,
+    "failureClass": "intentional NotImplemented helper seam",
+    "meaning": "The focused tests ran and failed on the missing helper behaviors, not discovery or dependency setup."
+  },
+  "green": {
+    "command": "node --test .\\.work\\acquisition\\nuget\\nuget-acquisition-helper.test.js",
+    "exitCode": 0,
+    "tests": 9,
+    "passed": 9,
+    "failed": 0,
+    "cancelled": 0,
+    "coverage": [
+      "realistic NuGet registration leaf identity/version/listed/prerelease/license",
+      "Base64 and hexadecimal SHA-512 normalization",
+      "HTTPS/host/official-prefix/fixed-content-path fencing",
+      "redirect-chain fencing",
+      "finite streaming byte bound and partial-file cleanup",
+      "exact-hash reuse and mismatch preservation without overwrite",
+      "metadata-only fixture receipt with executionAttempted=false and downloadAttempted=false",
+      "explicit admitted fake-stream download hashes bytes and does not execute"
+    ]
+  },
+  "metadataOnly": {
+    "command": "node .work\\acquisition\\nuget\\nuget-acquisition-helper.js metadata-only --manifest .work\\acquisition\\nuget\\nuget-direct-manifest-v2.json --out plans\\runs\\b0-toolchain-L7GDB\\evidence\\package-probe-preparation-01-metadata-dry-run.json --fixture-dir .work\\acquisition\\nuget",
+    "exitCode": 0,
+    "networkRequests": 0,
+    "packageBodiesTransferred": 0,
+    "executionAttempted": false,
+    "downloadAttempted": false
+  },
+  "unrunByDesign": [
+    "explicit download mode",
+    "dotnet restore/build/publish/test",
+    "native load",
+    "microphone/model/recognizer/provider/network evaluation"
+  ]
+}

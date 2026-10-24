@@ -1,0 +1,31 @@
+import { it, expect } from 'vitest';
+import WebSocket from 'ws';
+import { createServer } from './app';
+import { createMapSession } from './map-session';
+import { MemoryMapStore } from './memory-store';
+import { makeSimpleLayouts } from '../shared/fixtures/simple-layouts';
+import { csv } from '../shared/csv';
+import { routing } from '../shared/routing';
+import type { Snapshot } from '../shared/contracts';
+const receive=(socket:WebSocket,type:string)=>new Promise<any>((resolve,reject)=>{const handler=(raw:WebSocket.RawData)=>{const m=JSON.parse(raw.toString());if(m.type===type){clearTimeout(timer);socket.off('message',handler);resolve(m);}};const timer=setTimeout(()=>{socket.off('message',handler);reject(new Error('No '+type));},2000);socket.on('message',handler);});
+it('isolates two named demo layouts, broadcasts WebSocket parking and protects the main management API',async()=>{
+ const [a,b]=makeSimpleLayouts();const make=(map:typeof a)=>createMapSession({store:new MemoryMapStore(),seedMap:map,newEpoch:()=>map.id+'-epoch'});
+ const main=await make(a),straight=await make(a),loop=await make(b);
+ const options={session:main,csv,routing,managementToken:'test-only',allowedOrigins:['http://localhost'],demoSessions:{straight,loop}};
+ const handle=createServer(options);const clients:WebSocket[]=[];
+ try{await handle.listen({host:'127.0.0.1',port:0});const address=handle.httpServer.address();if(!address||typeof address==='string')throw new Error('No port');const base=`http://127.0.0.1:${address.port}`;
+ const snapshot:Snapshot=await(await fetch(base+'/api/map?layout=straight')).json();expect(snapshot.map.id).toBe('straight');
+ const loopSnapshot:Snapshot=await(await fetch(base+'/api/map?layout=loop')).json();expect(loopSnapshot.map.id).toBe('loop');
+ expect((await fetch(base+'/api/map?layout=missing')).status).toBe(404);
+ const wsbase=base.replace('http','ws')+'/ws?layout=straight';const one=new WebSocket(wsbase,{origin:'http://localhost'}),two=new WebSocket(wsbase,{origin:'http://localhost'});clients.push(one,two);
+ await Promise.all(clients.map(s=>new Promise<void>((resolve,reject)=>{s.once('open',resolve);s.once('error',reject);})));
+ const initials=clients.map(s=>{const p=receive(s,'map.snapshot');s.send(JSON.stringify({type:'subscribe',protocolVersion:1}));return p;});await Promise.all(initials);
+ const pushed=receive(two,'map.snapshot'),ack=receive(one,'command.result');one.send(JSON.stringify({type:'availability.set',protocolVersion:1,requestId:'park',command:{expectedEpoch:snapshot.epoch,expectedRevision:snapshot.revision,spaceId:'A-03',status:'occupied'}}));
+ const [event,result]=await Promise.all([pushed,ack]);expect(event.snapshot.revision).toBe(2);expect(result.snapshot.map.nodes.find((n:any)=>n.id==='A-03').status).toBe('occupied');
+ const next=straight.getSnapshot();const route=routing.findFastestAvailable(next.map,{startNodeId:'entrance'});expect(route.ok&&route.route.destinationSpaceId).toBe('A-07');expect(loop.getSnapshot().revision).toBe(1);
+ const imported={...next.map,name:'CSV imported'};const response=await fetch(base+'/api/map/import?layout=straight',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({expectedEpoch:next.epoch,expectedRevision:next.revision,csv:csv.serialize(imported)})});expect(response.status).toBe(200);expect((await response.json()).map.name).toBe('CSV imported');
+ const exported=csv.parse(await(await fetch(base+'/api/map.csv?layout=straight')).text());expect(exported.ok&&exported.value.name).toBe('CSV imported');
+ expect((await fetch(base+'/api/spaces/A-03',{method:'PATCH',headers:{'Content-Type':'application/json'},body:'{}'})).status).toBe(401);
+ expect((await fetch(base+'/api/map?layout=loop')).status).toBe(200);
+ }finally{await handle.close();await Promise.all(clients.map(s=>s.readyState===WebSocket.CLOSED?Promise.resolve():new Promise<void>(resolve=>s.once('close',()=>resolve()))));}
+});

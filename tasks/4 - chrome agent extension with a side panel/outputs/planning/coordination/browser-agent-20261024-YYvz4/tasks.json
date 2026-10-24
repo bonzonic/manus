@@ -1,0 +1,26 @@
+{
+  "runId":"browser-agent-20261024-YYvz4",
+  "taskRoot":"C:/Users/wongn/Documents/Interview/Manus/tasks/4 - chrome agent extension with a side panel",
+  "worktree":".work/worktrees/toolbar-20261024-YYvz4",
+  "baselineGitHead":"0c3155d560692d4042c5fdb7cb6a569cbf4c0cee",
+  "baselineSource":"outputs/shopee-sidepanel-agent/extension",
+  "baselineFiles":23,
+  "candidateIdentity":null,
+  "userSteering":{"realToolbarDefect":true,"puppeteerExplicitlyRequested":true,"generalBrowserTasks":true,"shopeeOnlyAnExample":true,"neutralProductNaming":true,"keysEnteredLocally":true,"sessionOnly":true},
+  "stages":[
+    {"priority":1,"stage":"startup-defect-owner","route":"om-task","status":"running-native-baseline","workItem":"outputs/planning/runs/browser-startup-20261024-YYvz4","productEditsAllowed":false},
+    {"priority":2,"stage":"generic-feature-owner","route":"om-feature","status":"running-read-only-contract","workItem":"outputs/planning/runs/browser-general-20261024-YYvz4","heavyWorkAllowed":false},
+    {"stage":"joined-implementation","status":"pending-two-owner-handoffs"},
+    {"stage":"fresh-independent-verification","status":"pending-frozen-candidate"},
+    {"stage":"owner-closeout-and-neutral-package","status":"pending-independent-result"}
+  ],
+  "dispatchReceipt":".manus/mcp-results/mcp-run-9d9a7d55950ab799917b782d1540fd52.json",
+  "nativeBaselineReservation":{"owner":"startup-defect-owner-only","samplesUTC":["2026-10-24T09:37:26Z","2026-10-24T09:37:31Z","2026-10-24T09:37:36Z"],"cpuPercent":[21.74,24.09,22.93],"memoryPercent":[62,61,61],"scope":"one isolated Puppeteer installation/baseline stage; second owner read-only"},
+  "userErrorDetails":"deferred question sent; screenshot/error answer pending, not a blocker for own baseline",
+  "codeRetryCount":0,
+  "realBrowserProfileUseAllowed":false,
+  "realCartOrCheckoutAllowed":false,
+  "liveOpenRouterCreditUseAllowed":false,
+  "publicShipmentAllowed":false,
+  "status":"diagnosing native startup and freezing explicit generic-browser amendment"
+}

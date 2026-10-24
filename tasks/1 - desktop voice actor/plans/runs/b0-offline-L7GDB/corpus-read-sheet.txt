@@ -1,0 +1,100 @@
+OFFLINE B0 OPTIONAL LOCAL READ-SHEET — TEXT ONLY
+Read each line once as one utterance if, and only if, the focused local-consent question is answered Yes.
+Do not read punctuation marks or quotation marks aloud; punctuation is retained in gold text for separate scoring.
+No audio is included in this file.
+
+[ENGLISH — 30]
+en-01 | Please send the revised invoice to Maya Chen today.
+en-02 | The meeting starts at nine thirty on Tuesday.
+en-03 | Do not delete the backup from March 14.
+en-04 | Our train leaves from platform seven at 18:05.
+en-05 | I need exactly three copies, not four.
+en-06 | Dr. Samuel Lee approved version 2.1.
+en-07 | The address is 42 River Road, Unit 8.
+en-08 | No, the blue folder is not the final one.
+en-09 | Can you call Priya Nair after lunch?
+en-10 | The package weighs 6.5 kilograms.
+en-11 | Use the password hint, not the password itself.
+en-12 | The deadline is November 30, 2026.
+en-13 | Please label this file Q4-results-final.
+en-14 | I never asked Jordan to cancel the order.
+en-15 | Turn left at Pine Street, then continue for two blocks.
+en-16 | The total is one hundred and twenty dollars.
+en-17 | Check whether the USB-C cable is connected.
+en-18 | Professor Elena García will join at 14:00.
+en-19 | We need a non-refundable ticket for Friday.
+en-20 | Do not merge the staging branch into main.
+en-21 | The code is A7-B9, not A7-B8.
+en-22 | Could you reserve table twelve for Alex?
+en-23 | The weather report says minus five degrees.
+en-24 | I cannot confirm the delivery date yet.
+en-25 | Please read the title as written: “North Star.”
+en-26 | Mina's appointment is on April 2 at 10 a.m.
+en-27 | There are 1,024 records in the archive.
+en-28 | No changes were made to the contract.
+en-29 | The backup completed successfully, didn't it?
+en-30 | Send the note to Wei, then wait for my reply.
+
+[MANDARIN — 30]
+zh-01 | 请把修改后的发票今天发给陈美雅。
+zh-02 | 会议在星期二上午九点半开始。
+zh-03 | 不要删除三月十四日的备份。
+zh-04 | 我们的火车十八点零五分从七号站台出发。
+zh-05 | 我只需要三份，不是四份。
+zh-06 | 李博士批准了二点一版本。
+zh-07 | 地址是河滨路四十二号八单元。
+zh-08 | 不，蓝色文件夹不是最终版本。
+zh-09 | 午饭后可以给娜迪亚打电话吗？
+zh-10 | 这个包裹重六点五公斤。
+zh-11 | 请使用密码提示，不要输入密码本身。
+zh-12 | 截止日期是二零二六年十一月三十日。
+zh-13 | 请把这个文件标记为第四季度结果最终版。
+zh-14 | 我从来没有让乔丹取消订单。
+zh-15 | 在松树街左转，然后继续走两个街区。
+zh-16 | 总金额是一百二十美元。
+zh-17 | 检查一下 USB-C 线是否已经连接。
+zh-18 | 埃琳娜·加西亚教授会在十四点加入。
+zh-19 | 我们需要一张星期五的不可退款车票。
+zh-20 | 不要把暂存分支合并到主分支。
+zh-21 | 代码是 A7-B9，不是 A7-B8。
+zh-22 | 可以帮亚历克斯预订十二号桌吗？
+zh-23 | 天气预报说气温是零下五度。
+zh-24 | 我现在还不能确认送达日期。
+zh-25 | 请按原样读出标题：“北极星”。
+zh-26 | 米娜的预约在四月二日上午十点。
+zh-27 | 档案里有一千零二十四条记录。
+zh-28 | 合同没有任何改动。
+zh-29 | 备份已经成功完成了，对吗？
+zh-30 | 把便条发给伟，然后等我的回复。
+
+[MIXED — 30]
+mix-01 | 请把 revised invoice 今天发给 Maya Chen。
+mix-02 | 会议 Tuesday 上午九点半开始。
+mix-03 | 不要 delete March 14 的 backup。
+mix-04 | 我们的 train 在 18:05 从七号站台出发。
+mix-05 | 我只要 three copies，不是 four copies。
+mix-06 | Dr. Samuel Lee 已经批准 version 2.1。
+mix-07 | 地址是 42 River Road，八单元。
+mix-08 | 不，blue folder 不是 final version。
+mix-09 | 午饭后请 call Priya Nair，可以吗？
+mix-10 | 这个 package 重 6.5 kilograms。
+mix-11 | 请使用 password hint，不要输入 password 本身。
+mix-12 | deadline 是 November 30, 2026，不是 December 1。
+mix-13 | 请把文件命名为 Q4-results-final。
+mix-14 | 我从来没有让 Jordan cancel the order。
+mix-15 | 在 Pine Street 左转，然后继续走 two blocks。
+mix-16 | 总金额是 one hundred and twenty dollars。
+mix-17 | 检查一下 USB-C cable 是否 connected。
+mix-18 | Professor Elena García 会在 14:00 加入。
+mix-19 | 我们需要 Friday 的 non-refundable ticket。
+mix-20 | 不要把 staging branch merge 到 main。
+mix-21 | 代码是 A7-B9，不是 A7-B8，please check carefully。
+mix-22 | 可以帮 Alex reserve table twelve 吗？
+mix-23 | 天气预报说是 minus five degrees，不是 five degrees。
+mix-24 | 我现在 cannot confirm delivery date。
+mix-25 | 请按原样读出标题：“North Star”，不要翻译。
+mix-26 | Mina 的 appointment 在 April 2 上午十点。
+mix-27 | 档案里有 1,024 records，不是 1,042。
+mix-28 | 合同没有 changes，please leave it as is。
+mix-29 | backup 已经 completed successfully，对吗？
+mix-30 | 把 note 发给 Wei，然后 wait for my reply。

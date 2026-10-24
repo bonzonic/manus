@@ -1,0 +1,42 @@
+:root {
+  --paper: #f4f7f8;
+  --ink: #18323d;
+  --muted-ink: #49636d;
+  --asphalt: #536570;
+  --route-blue: #176b87;
+  --free-green: #23734d;
+  --alert-amber: #9a5b00;
+  --danger-red: #a33131;
+  --line: #b8c7cd;
+  --white: #ffffff;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --radius-control: 8px;
+  --font-ui: "Segoe UI", system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+
+:root {
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-ui);
+  font-size: 16px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--route-blue);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "device":  "device:26d10d73-0966-4b78-b72f-9a97d38e8663",
+    "source":  "Get-Counter + Microsoft.VisualBasic ComputerInfo",
+    "collected_at":  "2026-10-24T17:33:33.2696711+08:00",
+    "total_physical_bytes":  34193793024,
+    "samples":  [
+                    {
+                        "at":  "2026-10-24T17:33:23.2063900+08:00",
+                        "cpu_percent":  23.04,
+                        "physical_memory_percent":  61.05,
+                        "available_bytes":  13318729728
+                    },
+                    {
+                        "at":  "2026-10-24T17:33:28.2158753+08:00",
+                        "cpu_percent":  19.7,
+                        "physical_memory_percent":  61.38,
+                        "available_bytes":  13205909504
+                    },
+                    {
+                        "at":  "2026-10-24T17:33:33.2269867+08:00",
+                        "cpu_percent":  21.78,
+                        "physical_memory_percent":  62.2,
+                        "available_bytes":  12925923328
+                    }
+                ],
+    "pressure_gate":  "GO",
+    "meaning":  "Pressure evidence only; dispatcher must separately check lease/dependencies and launch within 30 seconds of latest sample."
+}

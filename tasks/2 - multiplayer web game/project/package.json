@@ -1,0 +1,21 @@
+{
+  "name": "wayfinder-grid-snake",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0 <23"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "test:rules": "node --test test/rules/recovery-arena.test.js test/rules/recovery-round.test.js test/rules/recovery-turns-food-collision.test.js",
+    "test:rooms": "node --test test/rooms/recovery-admission.test.js test/rooms/recovery-lifecycle-rematch.test.js",
+    "test:transport": "node --test test/transport/recovery-wire.test.js test/transport/recovery-room-play-rematch.test.js",
+    "test:client": "node --test test/client/recovery-model.test.js test/client/recovery-renderers.test.js test/client/integration-ui-seam.test.js",
+    "test:security": "node --test test/security/recovery-validation.test.js",
+    "test": "node --test test"
+  },
+  "dependencies": {
+    "ws": "8.18.3"
+  }
+}

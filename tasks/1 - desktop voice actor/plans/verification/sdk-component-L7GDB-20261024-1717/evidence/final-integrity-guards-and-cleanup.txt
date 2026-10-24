@@ -1,0 +1,45 @@
+verifier=om-verifier sdk-component-L7GDB-20261024-1717
+timestamp_utc=2026-10-24T09:20:52.7355979Z
+---SOURCE_INTEGRITY---
+current_git_head=0c3155d560692d4042c5fdb7cb6a569cbf4c0cee
+expected_baseline_git_sha=0c3155d560692d4042c5fdb7cb6a569cbf4c0cee
+candidateGitSHA=pending_no_commit_authorized
+artifact_hashes_are_not_git_commits=true
+git_status_porcelain_count=0
+git_diff_HEAD_exit=0
+git_diff_cached_exit=0
+source_worktree_integrity_pass=True
+baseline_tracked_files=.gitignore,AGENTS.md,README.md
+baseline_project_like_tracked_count=0
+baseline_default_entry_path=C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\src|exists=False
+baseline_default_entry_path=C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\Program.cs|exists=False
+baseline_default_entry_path=C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\App.xaml|exists=False
+baseline_default_entry_path=C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\App.xaml.cs|exists=False
+baseline_default_entry_point_absence_measurable=True
+---NO_GLOBAL_INSTALL_REGRESSION_GUARDS_(SEPARATE_FROM_BASELINE_PROOF)---
+Get-Command_dotnet=not-found
+where.exe_dotnet_exit=1
+where.exe_dotnet_output=INFO: Could not find files for the given pattern(s).
+standard_global_path=C:\Program Files\dotnet\dotnet.exe|exists=False
+standard_global_path=C:\Program Files (x86)\dotnet\dotnet.exe|exists=False
+env_Process_DOTNET_ROOT=<empty>
+env_Process_DOTNET_ROOT(x86)=<empty>
+env_Process_DOTNET_CLI_HOME=<empty>
+env_Process_NUGET_PACKAGES=<empty>
+env_User_DOTNET_ROOT=<empty>
+env_User_DOTNET_ROOT(x86)=<empty>
+env_User_DOTNET_CLI_HOME=<empty>
+env_User_NUGET_PACKAGES=<empty>
+env_Machine_DOTNET_ROOT=<empty>
+env_Machine_DOTNET_ROOT(x86)=<empty>
+env_Machine_DOTNET_CLI_HOME=<empty>
+env_Machine_NUGET_PACKAGES=<empty>
+path_scopes_containing_dotnet_or_task_tool_path=<none>
+no_global_install_guard_pass=True
+---OWNED_PID_CLEANUP---
+pid=36292|state=exited|action=none
+pid=25864|state=exited|action=none
+pid=16876|state=exited|action=none
+remaining_owned_process_count=0
+remaining_owned_processes=<none>
+temporary_home_file_count=0

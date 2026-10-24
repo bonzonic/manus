@@ -1,0 +1,8 @@
+* Host dotnetcli.blob.core.windows.net:443 was resolved.
+* IPv6: (none)
+* IPv4: 20.60.81.165
+*   Trying 20.60.81.165:443...
+* schannel: disabled automatic use of client certificate
+* schannel: AcquireCredentialsHandle failed: SEC_E_NO_CREDENTIALS (0x8009030e) - No credentials are available in the security package
+* closing connection #0
+curl: (35) schannel: AcquireCredentialsHandle failed: SEC_E_NO_CREDENTIALS (0x8009030e) - No credentials are available in the security package

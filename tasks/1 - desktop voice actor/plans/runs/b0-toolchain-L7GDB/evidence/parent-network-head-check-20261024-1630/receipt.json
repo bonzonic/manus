@@ -1,0 +1,24 @@
+﻿{
+    "Script":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\plans\\runs\\b0-toolchain-L7GDB\\evidence\\parent-network-head-check.ps1",
+    "Curl":  "C:\\WINDOWS\\system32\\curl.exe",
+    "EnvironmentNetworkDisabled":  "0",
+    "MaxTimeSeconds":  10,
+    "ConnectTimeoutSeconds":  5,
+    "Targets":  [
+                    {
+                        "Url":  "https://dot.net/v1/dotnet-install.ps1",
+                        "ExitCode":  35,
+                        "Stdout":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\plans\\runs\\b0-toolchain-L7GDB\\evidence\\parent-network-head-check-20261024-1630\\dot.net_v1_dotnet-install.ps1.stdout.txt",
+                        "Stderr":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\plans\\runs\\b0-toolchain-L7GDB\\evidence\\parent-network-head-check-20261024-1630\\dot.net_v1_dotnet-install.ps1.stderr.txt",
+                        "TimestampUtc":  "2026-10-24T08:30:51.0255030Z"
+                    },
+                    {
+                        "Url":  "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/10.0/releases.json",
+                        "ExitCode":  35,
+                        "Stdout":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\plans\\runs\\b0-toolchain-L7GDB\\evidence\\parent-network-head-check-20261024-1630\\dotnetcli.blob.core.windows.net_dotnet_release-metadata_10.0_releases.json.stdout.txt",
+                        "Stderr":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\plans\\runs\\b0-toolchain-L7GDB\\evidence\\parent-network-head-check-20261024-1630\\dotnetcli.blob.core.windows.net_dotnet_release-metadata_10.0_releases.json.stderr.txt",
+                        "TimestampUtc":  "2026-10-24T08:30:51.3070402Z"
+                    }
+                ],
+    "Interpretation":  "Diagnostic only. Inspect stderr/stdout and exit codes; do not infer TLS/HTTP status when curl did not reach those layers."
+}

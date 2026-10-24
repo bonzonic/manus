@@ -1,0 +1,120 @@
+{
+  "schema": "b0-sdk-acquisition-preparation-manifest-v1",
+  "workItem": "b0-toolchain-L7GDB",
+  "stageReservation": "sdk-acquisition-prep-01",
+  "generatedAt": "2026-10-24T16:41:00+08:00",
+  "status": "PREPARED_NOT_ACQUIRED_NOT_INSTALLED_NOT_VERIFIED",
+  "baseline": "0c3155d560692d4042c5fdb7cb6a569cbf4c0cee",
+  "worktree": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB",
+  "scope": {
+    "productSourceTouched": false,
+    "canonicalDocsTouched": false,
+    "sdkDownloadedByWorker": false,
+    "sdkInstalled": false,
+    "sdkExtracted": false,
+    "nugetFetched": false,
+    "modelFetched": false,
+    "restoreBuildTest": false,
+    "microphoneOpened": false,
+    "providerCalled": false,
+    "credentialsRead": false,
+    "commitPushDeploy": false
+  },
+  "helper": {
+    "path": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\scripts\\dotnet10-sdk-acquire.cjs",
+    "sha256": "8B05A7DBA6F00A0DBC77F5B51978834144A31BB34F295997DF896F94028C7060",
+    "bytes": 18367,
+    "runtime": "Node built-ins only",
+    "metadataUrl": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/10.0/releases.json",
+    "targetMajor": 10,
+    "targetRid": "win-x64",
+    "acquisitionDirectory": "<worktree>\\.work\\acquisition",
+    "allowedHosts": [
+      "builds.dotnet.microsoft.com",
+      "dotnetcli.blob.core.windows.net"
+    ],
+    "maxRedirects": 5,
+    "maxMetadataBytes": 16777216,
+    "maxSdkBytes": 2000000000,
+    "timeoutMs": 1800000,
+    "httpsOnly": true,
+    "normalNodeCertificateValidation": true,
+    "customCa": false,
+    "proxyOverride": false,
+    "credentialUse": false,
+    "extraction": false,
+    "installation": false
+  },
+  "testHelper": {
+    "path": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\scripts\\test-dotnet10-sdk-acquire.cjs",
+    "sha256": "E9B92943896BF9889255164F741230BBF2F8B67A83C128082E952B6767AAFBE0",
+    "bytes": 5710,
+    "fixturePath": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\scripts\\fixtures\\releases-10-fixture.json",
+    "fixtureSha256": "FDDD077435175C8453B60876F172A337D8CBA92E9F24E44C9087062F2634565E",
+    "fixtureBytes": 2694,
+    "commands": [
+      {
+        "command": "node --check .work\\scripts\\dotnet10-sdk-acquire.cjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node --check .work\\scripts\\test-dotnet10-sdk-acquire.cjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node .work\\scripts\\test-dotnet10-sdk-acquire.cjs",
+        "exitCode": 0,
+        "checksPassed": 6,
+        "networkCalls": 0
+      }
+    ],
+    "covered": [
+      "stable latest .NET 10 SDK metadata selection",
+      "HTTPS and explicit Microsoft-host redirect policy",
+      "SHA-256 and SHA-512 digest validation",
+      "mismatched existing archive preservation without overwrite",
+      "acquisition-only path fence and no extraction/install/restore/build/test policy",
+      "no network call during fixture tests"
+    ]
+  },
+  "parentNetworkReceipt": {
+    "path": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\plans\\runs\\b0-toolchain-L7GDB\\evidence\\parent-network-node-head-check-20261024-1635\\receipt.json",
+    "client": "Node node:https",
+    "runtime": "v22.12.0",
+    "route": "parent explicit network:true route",
+    "targets": [
+      "https://dot.net/v1/dotnet-install.ps1",
+      "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/10.0/releases.json"
+    ],
+    "observedHttpStatus": [200, 200],
+    "diagnosticOnly": true,
+    "noAcquisitionRestoreBuild": true
+  },
+  "parentInvocation": "node \"C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\scripts\\dotnet10-sdk-acquire.cjs\" --worktree \"C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\" --download-sdk",
+  "runtimeAcquisitionManifest": {
+    "expectedLocation": "<worktree>\\.work\\acquisition\\dotnet10-sdk-acquisition-<timestamp>.json",
+    "requiredFields": [
+      "sourceMetadata.requestedUrl",
+      "sourceMetadata.finalUrl",
+      "sourceMetadata.retrievedAt",
+      "sourceMetadata.byteCount",
+      "sourceMetadata.sha256",
+      "sdk.version",
+      "sdk.url",
+      "sdk.finalUrl",
+      "sdk.expectedSha512",
+      "sdk.sha512",
+      "sdk.sha256",
+      "sdk.byteCount",
+      "sdk.archivePath"
+    ],
+    "pendingUntilParentRun": true
+  },
+  "preparedEvidenceReport": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\plans\\runs\\b0-toolchain-L7GDB\\evidence\\sdk-acquisition-preparation.md",
+  "futureSdkInstallResumePrompt": "You are a distinct follow-on SDK-install implementer, not the acquisition worker, coordinator, or verifier. Work only in C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB at detached baseline 0c3155d560692d4042c5fdb7cb6a569cbf4c0cee. Read the v2 contract/plan/handoff, sdk-acquisition-preparation.md, sdk-acquisition-manifest.json, and the parent-generated runtime manifest under .work\\acquisition. Require a successful parent acquisition exit and matching official SHA-512 before acting; stop if absent, incomplete, mismatched, or nonzero. Do not re-download, use a mirror/proxy/VPN/TLS override, read credentials, or change system/environment settings. In a separately admitted local setup stage, extract/install only the verified official .NET 10 Windows x64 SDK under .work\\tools\\dotnet; do not change global PATH, touch product src, restore/build/test product, open a microphone, fetch NuGet/models, commit, push, deploy, or claim C1-C8. Record exact extraction/install commands, exit codes, SDK path/version, and dotnet --info; leave a fresh independent verifier to repeat the gates.",
+  "blockers": [
+    "Parent must execute the helper through the explicit network:true route with separate SDK-download admission.",
+    "Official releases JSON SHA-256, selected exact SDK version/URL, SDK SHA-512/SHA-256, byte count, and retrieval timestamp are pending the parent helper run.",
+    "SDK installation, package graph, model archive/licensing, restore/build/publish, native loading, and offline inference are separate stages."
+  ]
+}

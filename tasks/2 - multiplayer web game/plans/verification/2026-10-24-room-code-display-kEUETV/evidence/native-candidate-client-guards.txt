@@ -1,0 +1,50 @@
+TAP version 13
+# Subtest: browser seam binds lifecycle surfaces, join form, socket-open hello, and direction controls
+ok 1 - browser seam binds lifecycle surfaces, join form, socket-open hello, and direction controls
+  ---
+  duration_ms: 20.0092
+  ...
+# Subtest: join form submits the entered room code through the same-origin socket
+ok 2 - join form submits the entered room code through the same-origin socket
+  ---
+  duration_ms: 0.3693
+  ...
+# Subtest: cold startup consumes one valid room query as a JOIN and never CREATEs
+ok 3 - cold startup consumes one valid room query as a JOIN and never CREATEs
+  ---
+  duration_ms: 0.4212
+  ...
+# Subtest: cold startup rejects malformed room query without opening a create flow
+ok 4 - cold startup rejects malformed room query without opening a create flow
+  ---
+  duration_ms: 0.2977
+  ...
+# Subtest: model accepts confirmed welcome/snapshot/ack/effect/result/error but never awards authoritative state locally
+ok 5 - model accepts confirmed welcome/snapshot/ack/effect/result/error but never awards authoritative state locally
+  ---
+  duration_ms: 1.583
+  ...
+# Subtest: presentation intent is capped at 150ms and ack reconciliation removes only confirmed turns
+ok 6 - presentation intent is capped at 150ms and ack reconciliation removes only confirmed turns
+  ---
+  duration_ms: 0.7851
+  ...
+# Subtest: board renderer draws the 40 by 24 authoritative board and food
+ok 7 - board renderer draws the 40 by 24 authoritative board and food
+  ---
+  duration_ms: 1.5297
+  ...
+# Subtest: DOM renderers write lifecycle, HUD, result, and connection to stable IDs
+ok 8 - DOM renderers write lifecycle, HUD, result, and connection to stable IDs
+  ---
+  duration_ms: 0.7969
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 97.0615

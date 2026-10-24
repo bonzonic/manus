@@ -1,0 +1,69 @@
+{
+  "status": "MEASUREMENT_BLOCKED_OR_INCOMPLETE",
+  "candidateSha": "eebdb1d9408a2002c5971d7c8b4f15ba1f558bed",
+  "observedCandidateSha": "eebdb1d9408a2002c5971d7c8b4f15ba1f558bed",
+  "baselineSha": "0c3155d560692d4042c5fdb7cb6a569cbf4c0cee",
+  "startedAt": "2026-10-24T09:38:56.592Z",
+  "config": {
+    "project": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-mvp-candidate-20261024-kEUETV\\project",
+    "evidenceRoot": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-snake-candidate-v1-kEUETV\\evidence",
+    "playwrightRoot": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\tools\\browser-qa\\node_modules\\playwright",
+    "rttMs": 150,
+    "jitterMs": 25,
+    "maxSeconds": 120,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "narrowViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+  },
+  "pure": {
+    "passed": true,
+    "fixtures": [
+      {
+        "name": "arena-bounds-and-legal-food",
+        "status": "PASS"
+      },
+      {
+        "name": "round-shape-and-mirrored-spawn",
+        "status": "PASS"
+      },
+      {
+        "name": "turn-queue-reversal-and-cap",
+        "status": "PASS"
+      },
+      {
+        "name": "apple-growth-exactly-one",
+        "status": "PASS"
+      },
+      {
+        "name": "mushroom-boost-refresh-and-pause-freeze",
+        "status": "PASS"
+      },
+      {
+        "name": "head-swap-and-terminal-pickup-suppression",
+        "status": "PASS"
+      },
+      {
+        "name": "protocol-message-size-origin-and-authority-boundary",
+        "status": "PASS"
+      },
+      {
+        "name": "room-admission-ready-rematch-and-expiry-fixture",
+        "status": "PASS"
+      }
+    ]
+  },
+  "browser": null,
+  "fatal": {
+    "message": "Timed out waiting for created room code",
+    "stack": "Error: Timed out waiting for created room code at file:///C:/Users/wongn/Documents/Interview/Manus/tasks/2%20-%20multiplayer%20web%20game/plans/verification/2026-10-24-snake-candidate-v1-kEUETV/snake-verifier.mjs:206:11 at runNextTicks (node:internal/process/task_queues:65:5) at process.processTimers (node:internal/timers:526:9) at async browserFlow (file:///C:/Users/wongn/Documents/Interview/Manus/tasks/2%20-%20multiplayer%20web%20game/plans/verification/2026-10-24-snake-candidate-v1-kEUETV/snake-verifier.mjs:294:5) at async main (file:///C:/Users/wongn/Documents/Interview/Manus/tasks/2%20-%20multiplayer%20web%20game/plans/verification/2026-10-24-snake-candidate-v1-kEUETV/snake-verifier.mjs:383:22)"
+  },
+  "eventsFile": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-snake-candidate-v1-kEUETV\\evidence\\trace-sanitized.json",
+  "finishedAt": "2026-10-24T09:39:10.495Z",
+  "durationMs": 13937
+}

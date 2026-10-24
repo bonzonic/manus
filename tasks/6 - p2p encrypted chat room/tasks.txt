@@ -1,0 +1,14 @@
+6. P2P encrypted chat room
+Build a P2P encrypted chat room. Users can connect with each other and send and receive messages, with the focus on preventing chat data from leaking as much as possible. Whether to build accounts or a login system is up to you; it is not the focus of this problem.
+
+You may use a server for user discovery, connection signaling or message relay, but think about how chat data could leak on the sending side, in transit, through intermediate services and on the receiving side, and how to reduce those risks.
+
+Things worth thinking about:
+
+Threat model: which data needs protection, which attackers you may face, which components can be trusted, and which risks are out of scope;
+End-to-end encryption: how keys are generated, exchanged, verified, stored and rotated, and how to avoid man-in-the-middle attacks, replay attacks and home-made, unreliable cryptographic protocols;
+Transport and intermediate services: what signaling servers, relays, network requests, message queues or offline messages can see, and how to ensure they cannot read message content;
+Local data security: how to handle chat history, keys, caches, logs, notifications and error reports, and what happens if a device is lost or used by someone else;
+Metadata and privacy boundaries: even with encrypted content, whether information such as who is talking, when, how often, IP addresses or message sizes can still leak;
+Expressing security state in the product: how users confirm they are talking to the right person, and how they understand key changes, failed verification or insecure connections.
+Using only HTTPS or WSS does not mean end-to-end encryption. Do not make blanket claims that the product is "absolutely secure"; explain the actual security boundaries in a way that can be verified.

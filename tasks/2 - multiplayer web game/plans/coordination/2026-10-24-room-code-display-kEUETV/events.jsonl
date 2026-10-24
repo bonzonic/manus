@@ -1,0 +1,1 @@
+{"at":"2026-10-24T18:19:22+08:00","event":"owner_contract_and_separate_lanes","rootcause":"renderPhase does not populate either room-code surface","allowed_product_files":["public/dom-renderer.js","test/client/room-code-display.test.js"],"implementation":"one admitted native DOM stage","qa_preparation":"text-only parallel","user_server":"untouched"}

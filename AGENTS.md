@@ -16,9 +16,18 @@ Read `outputs/manus-agents/README.md` and the selected role before starting. Rea
 
 ## Document destination
 
-All five roles must produce their documents under `C:\Users\wongn\Documents\Obsidian Vault\Interviews\Manus`. This user-selected destination overrides older vault paths, repository-local document defaults, and output locations in inherited prompts unless the user explicitly requests another destination. Read the shared guide's Document destination section for the per-task layout and collision rules. Agent definitions and product code stay in their existing locations.
+All five roles use `C:\Users\wongn\Documents\Obsidian Vault\Interviews\Manus\Tasks` as the canonical document root. Read the [exact task-folder registry](outputs/manus-agents/TASK-FOLDERS.md) and [Obsidian task index](C:/Users/wongn/Documents/Obsidian%20Vault/Interviews/Manus/Tasks/README.md). A task number or unique title selects its existing folder; do not ask the user to supply the path again or invent a separate role-specific vault tree. This overrides older document defaults. Agent definitions and product repositories remain in their existing locations.
 
-The parent/coordinator assigns the absolute task-document folder before dispatch and includes it in every handoff. Coordination records use their own `coordination/<task-key>/` folder; each child retains its distinct feature/task/research folder and parent linkage. Verification of a feature or defect uses that child's same task folder with a unique verifier-owned subfolder. If the destination cannot be written, report the access blocker; do not silently deliver somewhere else.
+1. [1 - desktop voice actor](C:/Users/wongn/Documents/Obsidian%20Vault/Interviews/Manus/Tasks/1%20-%20desktop%20voice%20actor/) — also resolves “desktop voice input.”
+2. [2 - multiplayer web game](C:/Users/wongn/Documents/Obsidian%20Vault/Interviews/Manus/Tasks/2%20-%20multiplayer%20web%20game/).
+3. [3 - local harness with plugins](C:/Users/wongn/Documents/Obsidian%20Vault/Interviews/Manus/Tasks/3%20-%20local%20harness%20with%20plugins/).
+4. [4 - chrome agent extension with a side panel](C:/Users/wongn/Documents/Obsidian%20Vault/Interviews/Manus/Tasks/4%20-%20chrome%20agent%20extension%20with%20a%20side%20panel/).
+5. [5 - mcp server terminal controller](C:/Users/wongn/Documents/Obsidian%20Vault/Interviews/Manus/Tasks/5%20-%20mcp%20server%20terminal%20controller/).
+6. [6 - p2p encrypted chat room](C:/Users/wongn/Documents/Obsidian%20Vault/Interviews/Manus/Tasks/6%20-%20p2p%20encrypted%20chat%20room/).
+7. [7 - bring your own idea](C:/Users/wongn/Documents/Obsidian%20Vault/Interviews/Manus/Tasks/7%20-%20bring%20your%20own%20idea/).
+8. [8 - product promo video](C:/Users/wongn/Documents/Obsidian%20Vault/Interviews/Manus/Tasks/8%20-%20product%20promo%20video/).
+
+Read the selected task's `architecture/architecture.md` and `plans/plan.md` before acting. Resolve and pass `TASK_DOCS_DIR`, `ARCH_DOCS_DIR`, `PLAN_DOCS_DIR` and the role-specific work-item/run paths in every handoff. Research lives in `architecture/research/<work-item-key>/`; owner contracts and handoffs in `plans/runs/<work-item-key>/`; independent verifier records in `plans/verification/<run-id>/`; coordinator records in `plans/coordination/<run-id>/`. Distinct slices share their mapped task folder but use distinct work-item/run namespaces. Preserve existing notes and frozen contracts, and serialize shared-document writes. If access is blocked, report it; a parent may save returned document text through the authorized permission flow at the exact destination, never silently elsewhere.
 
 ## Role separation
 

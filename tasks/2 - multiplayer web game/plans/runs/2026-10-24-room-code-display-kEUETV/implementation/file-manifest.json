@@ -1,0 +1,14 @@
+{
+  "baseline_sha": "afd285f6c85cfa4638fbcd84973d1ae1bfa41e35",
+  "candidate_commit": null,
+  "files": [
+    {
+      "path": "public/dom-renderer.js",
+      "sha256": "13C13904FC5E27697A21439D6CA3C744E56FD2B9955A1B486CC541035DCB8DA5"
+    },
+    {
+      "path": "test/client/room-code-display.test.js",
+      "sha256": "E227EF97539F11B65FF1D770AB3A749881045C6F766CE6049C80187DC348B801"
+    }
+  ]
+}

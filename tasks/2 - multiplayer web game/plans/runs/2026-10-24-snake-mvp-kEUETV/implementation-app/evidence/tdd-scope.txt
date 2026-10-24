@@ -1,0 +1,20 @@
+Application lane evidence receipt
+
+Baseline supplied: 0c3155d560692d4042c5fdb7cb6a569cbf4c0cee
+
+Passing scoped commands:
+- node --test test/rules/core.test.js => exit 0, 6 passed, 0 failed
+- node --test test/rules/protocol-fixtures.test.js => exit 0, 1 passed, 0 failed
+- node --test test/rooms/lifecycle.test.js => exit 0, 3 passed, 0 failed
+- node --test test/client/model.test.js => exit 0, 1 passed, 0 failed
+- node --test test/security/validation.test.js => exit 0, 2 passed, 0 failed
+- node scripts/check-package.js => exit 0, package manifest ok
+- PowerShell loop of node --check over 20 application JS files => exit 0, SYNTAX_OK 20 files
+
+Blocked command:
+- npm install --ignore-scripts --no-audit --no-fund --cache .work/npm-cache => exit 1, EACCES connecting to registry.npmjs.org/ws; no package-lock produced
+- node --test test/transport/server.test.js => exit 1, ERR_MODULE_NOT_FOUND package ws from server/authoritative-server.js
+
+Unrun by policy/capability: full node --test test suite, browser, real server, HTTPS/WSS public route, latency/jitter, Render deployment, independent verification.
+
+Process receipt: no persistent server, watcher, browser, or background process was started. Test/check processes exited. processes_remaining=[]

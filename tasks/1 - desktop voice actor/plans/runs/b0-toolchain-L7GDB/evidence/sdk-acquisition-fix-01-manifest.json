@@ -1,0 +1,104 @@
+{
+  "schema": "b0-sdk-acquisition-fix-manifest-v1",
+  "workItem": "b0-toolchain-L7GDB",
+  "repairReservation": "sdk-helper-fix-01",
+  "generatedAt": "2026-10-24T16:50:06+08:00",
+  "status": "FIXED_SOURCE_NOT_ACQUIRED_NOT_INSTALLED_NOT_VERIFIED",
+  "baseline": "0c3155d560692d4042c5fdb7cb6a569cbf4c0cee",
+  "worktree": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB",
+  "reservationReceipt": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\plans\\coordination\\implementation-20261024-L7GDB\\evidence\\admission-sdk-helper-fix-start-01.json",
+  "preservedEvidence": {
+    "preparationReport": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\plans\\runs\\b0-toolchain-L7GDB\\evidence\\sdk-acquisition-preparation.md",
+    "preparedManifest": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\plans\\runs\\b0-toolchain-L7GDB\\evidence\\sdk-acquisition-manifest.json"
+  },
+  "rootCause": {
+    "observedError": "sdk-acquisition-error: unexpected SDK archive name: dotnet-sdk-win-x64.zip",
+    "metadataShape": "Official file metadata uses the generic display name dotnet-sdk-win-x64.zip while the validated URL path contains the versioned transfer basename dotnet-sdk-<sdk.version>-win-x64.zip.",
+    "predecessorBehavior": "selectLatestStableSdk validated file.name as the transfer archive name before examining file.url.",
+    "repair": "Validate the official URL first, derive its final path segment, require dotnet-sdk-<selected sdk.version>-win-x64.zip, and allow only the observed exact generic display name or an exact display name equal to that URL basename."
+  },
+  "changedArtifacts": [
+    {
+      "path": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\scripts\\dotnet10-sdk-acquire.cjs",
+      "role": "repaired acquisition helper",
+      "bytes": 18913,
+      "sha256": "2264F40F097B93E5A541B9FDB8403994CC6BDF5F46B5C4C431DB24AA455A8D5A"
+    },
+    {
+      "path": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\scripts\\test-dotnet10-sdk-acquire.cjs",
+      "role": "regression and original deterministic checks",
+      "bytes": 6380,
+      "sha256": "073DBF4D82AF28F0296E6D49530766F3DF44A2B8D560B3BB2D15B4E66D37DBDD"
+    },
+    {
+      "path": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\scripts\\fixtures\\releases-10-display-name-fixture.json",
+      "role": "new representative display-name/URL regression fixture",
+      "bytes": 642,
+      "sha256": "DD6556BC1F171D741201ADB82EE59A8025BCAD052AFD2FC1BFD4EE4C33F6EF56",
+      "syntheticOnly": true
+    },
+    {
+      "path": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\scripts\\fixtures\\releases-10-fixture.json",
+      "role": "original fixture unchanged",
+      "bytes": 2694,
+      "sha256": "FDDD077435175C8453B60876F172A337D8CBA92E9F24E44C9087062F2634565E"
+    }
+  ],
+  "redBeforeFix": {
+    "command": "node --check .work\\scripts\\test-dotnet10-sdk-acquire.cjs; node .work\\scripts\\test-dotnet10-sdk-acquire.cjs",
+    "exitCode": 1,
+    "error": "unexpected SDK archive name: dotnet-sdk-win-x64.zip"
+  },
+  "greenAfterFix": {
+    "commands": [
+      "node --check .work\\scripts\\dotnet10-sdk-acquire.cjs",
+      "node --check .work\\scripts\\test-dotnet10-sdk-acquire.cjs",
+      "node .work\\scripts\\test-dotnet10-sdk-acquire.cjs",
+      "git diff --check"
+    ],
+    "exitCode": 0,
+    "checksPassed": 7,
+    "networkCalls": 0,
+    "originalChecksStillGreen": true
+  },
+  "scope": {
+    "networkRequestsByWorker": false,
+    "sdkDownloaded": false,
+    "sdkInstalled": false,
+    "sdkExtracted": false,
+    "nugetFetched": false,
+    "modelFetched": false,
+    "restoreBuildTest": false,
+    "microphoneOpened": false,
+    "providerCalled": false,
+    "credentialsRead": false,
+    "productSourceTouched": false,
+    "canonicalDocsTouched": false,
+    "systemOrTlsSettingsChanged": false,
+    "commitPushDeploy": false
+  },
+  "parentInvocation": "node \"C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\scripts\\dotnet10-sdk-acquire.cjs\" --worktree \"C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\" --download-sdk",
+  "installResumption": {
+    "requires": [
+      "successful parent acquisition exit",
+      "acquisition-local runtime manifest present and complete",
+      "matching official SHA-512"
+    ],
+    "target": "<worktree>\\.work\\tools\\dotnet",
+    "prohibitions": [
+      "no re-download",
+      "no mirror/proxy/VPN/TLS override",
+      "no credentials or environment/system changes",
+      "no product source touch",
+      "no restore/build/test/product verification",
+      "no microphone/provider/model fetch"
+    ],
+    "sourcePacket": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\plans\\runs\\b0-toolchain-L7GDB\\evidence\\sdk-acquisition-preparation.md"
+  },
+  "blockers": [
+    "Parent must rerun the exact invocation through the separately admitted network:true route.",
+    "Official releases JSON digest, selected SDK version and URL, SDK SHA-512/SHA-256, byte count, and runtime timestamp remain pending the parent run.",
+    "SDK installation, package graph, model archive/licensing, restore/build/publish, native loading, offline inference, and independent verification remain separate stages."
+  ],
+  "reportPath": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\plans\\runs\\b0-toolchain-L7GDB\\evidence\\sdk-acquisition-fix-01.md"
+}

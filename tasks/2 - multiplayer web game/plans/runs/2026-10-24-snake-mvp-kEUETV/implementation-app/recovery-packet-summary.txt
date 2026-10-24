@@ -1,0 +1,28 @@
+STATUS: ready_for_distinct_remedial_implementer
+
+HISTORICAL GAP
+The old app lane's first RED was ERR_MODULE_NOT_FOUND for missing server/game/rules.js. It is invalid setup failure, not behavioral RED. Do not retroactively call old implementation TDD-complete; preserve its report unchanged and never use its production bytes as a reference.
+
+WORKTREE REQUEST
+Parent prepares via authorized .git metadata only:
+C:\Users\wongn\Documents\Interview\Manus\tasks\2 - multiplayer web game\.work\worktrees\snake-mvp-backend-recovery-20261024-kEUETV\project
+Start at baseline 0c3155d560692d4042c5fdb7cb6a569cbf4c0cee. Preserve old app, static lane, and candidate worktrees. Do not copy old server/shared/client production source.
+
+RETAINABLE SETUP ONLY
+package.json; package-lock.json (ws 8.18.3, parent-resolved); .gitignore; render.yaml as proposed config only; existing test/**/*.test.js, test/fixtures/room-fixture.json, shared/fixtures/snake-fixtures.json as untrusted scaffolding to audit/rewrite. Do not copy BLOCKED.md, README/docs, or old production JS/JSON. Static HTML/CSS/SVG/manifest remain outside this lane.
+
+RECREATE FROM ZERO
+server/index.js; server/authoritative-server.js; server/protocol/validate.js; server/game/arena.js; server/game/rules.js; server/rooms/room-manager.js; server/rooms/lifecycle.js; shared/protocol.json; shared/constants.js; public/app.js; public/client-model.js; public/protocol-client.js; public/board-renderer.js; public/dom-renderer.js; public/README-behavior.md; README.md; docs/implementation.md; docs/render.md.
+
+VALID RED RULE
+Write focused test first. Then, only if needed, create an importable zero-behavior scaffold so the test executes. Run direct focused command and require a behavioral assertion failure. ERR_MODULE_NOT_FOUND/MODULE_NOT_FOUND, missing ws, syntax, discovery, setup, malformed fixture, or environment failures are invalid REDs. Implement minimum, rerun same command GREEN, then run changed scope. Do not use npm test/node --test test in app stage; full shared suite is reserved for later candidate/integrator/verifier handling and must be reported unrun here.
+
+CYCLES / INTENDED RED COMMANDS
+A: test/rules/recovery-round.test.js; test/rules/recovery-arena.test.js -> node --test each; implement protocol/arena/createRound.
+B: test/rules/recovery-turns.test.js; recovery-step-food.test.js; recovery-boost-collision.test.js; recovery-outcomes.test.js -> node --test each; implement frozen turns, 60Hz step, food, boost, atomic collisions/outcomes.
+C: test/security/recovery-validation.test.js; test/transport/recovery-bounds.test.js; recovery-wire.test.js -> node --test each; implement bounded validation/WSS envelopes/credentials.
+D: test/rooms/recovery-admission.test.js; recovery-lifecycle.test.js; recovery-rematch.test.js -> node --test each; implement two-seat lifecycle/reconnect/rematch.
+E: test/client/recovery-model.test.js; recovery-renderers.test.js -> node --test each; implement authoritative browser model/seams, no static edits.
+F: test/transport/recovery-room-play-rematch.test.js -> node --test test/transport/recovery-room-play-rematch.test.js; complete one real room/play/result/rematch boundary.
+
+After each cycle run only the changed scope: node --test test/rules, test/rooms, test/transport, test/client, or test/security. Preserve S1-S10 and exact wire-contract APIs/messages. No browser, public Render, deployment, commit, merge, or independent-verifier claim.

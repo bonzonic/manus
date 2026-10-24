@@ -1,0 +1,1 @@
+IDLE_SMOKE PASS phase=Idle recognizers=1 clipboard-calls=0

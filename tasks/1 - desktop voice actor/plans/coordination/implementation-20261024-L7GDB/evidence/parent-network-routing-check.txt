@@ -1,0 +1,2 @@
+﻿Coordinator network-routing receipt 2026-10-24T16:26:58.9319254+08:00
+=== https://dot.net/v1/dotnet-install.ps1 ===

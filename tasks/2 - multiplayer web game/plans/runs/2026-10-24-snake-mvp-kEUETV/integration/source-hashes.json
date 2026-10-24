@@ -1,0 +1,158 @@
+[
+    {
+        "path":  ".gitignore",
+        "sha256":  "f08f11aa60a0ede7f48d7bdf4774925a504bba04a2bb228e5c212688cfa73671"
+    },
+    {
+        "path":  "docs/implementation.md",
+        "sha256":  "dae7d50b8543f015b8aaf44aeadb6cca33c435dd22092c69129a4310ec07ec4e"
+    },
+    {
+        "path":  "docs/render.md",
+        "sha256":  "7067dae87934c8dc37ba91de4ade9e999ed8902b3100ba771e176af720cce95f"
+    },
+    {
+        "path":  "package.json",
+        "sha256":  "89bb9e4224b85197ab0d2dde0747d6bb11e9ca0c74960bb1de3e2bfe1c4bd75a"
+    },
+    {
+        "path":  "package-lock.json",
+        "sha256":  "e4c747b4823ac2980107316186a8847cdfa6dd1fd259370a27512272ef56930e"
+    },
+    {
+        "path":  "public/app.js",
+        "sha256":  "7c3eb5f14fadc03f99122d1e0026f6e6dd3768a679608d20e0ad6d75c1a38256"
+    },
+    {
+        "path":  "public/assets/shapes.svg",
+        "sha256":  "c0aae162c360b13499dba07f28973019473981bbbe0dff215f90f4edee4f8f4e"
+    },
+    {
+        "path":  "public/board-renderer.js",
+        "sha256":  "e45d762f7072bdc31c4b41d9fa0b3021a0d42714637b0fd91e1dbc79dac8d7f7"
+    },
+    {
+        "path":  "public/client-model.js",
+        "sha256":  "2ca4c6d77e04e3dbd6c5805e042503303305eaa3610a6bfec5e936ba7fa126e7"
+    },
+    {
+        "path":  "public/dom-renderer.js",
+        "sha256":  "13e18079d14d478852adfb026d9f12ab4b04b064ceccf29738e8ef08af715a07"
+    },
+    {
+        "path":  "public/index.html",
+        "sha256":  "dc957951b1be941afbd78376063fed7043673ce27591486c30ae82996262a3d8"
+    },
+    {
+        "path":  "public/manifest.webmanifest",
+        "sha256":  "bf72b9066b19ab36211bc5c405762e0f2b49ab5b9e428d2ba7d04241a1ae9ee0"
+    },
+    {
+        "path":  "public/protocol-client.js",
+        "sha256":  "57fff8eed888d38a0782dd8a240246ac33b5791f36d0fac6f7906ef9c41104ae"
+    },
+    {
+        "path":  "public/README-behavior.md",
+        "sha256":  "9713401a56f584c37940655dbe5c60278199b7a22aa738afc88f3c203a4aa5a7"
+    },
+    {
+        "path":  "public/styles.css",
+        "sha256":  "520924b4d9565df35300907a3e88dde606b285d693985d40c082dca1e7fb8a9c"
+    },
+    {
+        "path":  "README.md",
+        "sha256":  "df279d9a7fc465534d69517522691d56313dcbd0643fdba378bc7776633d9f43"
+    },
+    {
+        "path":  "render.yaml",
+        "sha256":  "d1cc02955b21790c8204e1cb610d326dff8c4e4af87c3bb51a8ae6b846539b7c"
+    },
+    {
+        "path":  "server/authoritative-server.js",
+        "sha256":  "db0b62183f6dae24a55191d6263e8bf771ad46ead0fc815814fc17aa6bf0438b"
+    },
+    {
+        "path":  "server/game/arena.js",
+        "sha256":  "28faf15782469d601dfc5fb25537e4419dd9b98a2f88b03c7da8c2a81db20648"
+    },
+    {
+        "path":  "server/game/rules.js",
+        "sha256":  "b2b2aed7015a691fba981c2c99ae8f4f32ddf21aef9175a35c9266e3035957d0"
+    },
+    {
+        "path":  "server/index.js",
+        "sha256":  "acbf4c85392b1cd46f35efb3449d0f03f010f7333e8fbe076434d63de45f8ac7"
+    },
+    {
+        "path":  "server/protocol/validate.js",
+        "sha256":  "069aff7ddc8961a92bde80f82f642034f9eb95c5869e4edd9f8bf65993af7edf"
+    },
+    {
+        "path":  "server/rooms/lifecycle.js",
+        "sha256":  "8e7fccbf56f32289480ba2049e95093a77c86a87e121b72274dc18bf8636c1ef"
+    },
+    {
+        "path":  "server/rooms/room-manager.js",
+        "sha256":  "f5266bf96ff47cc5f76b73c42fe1efb826c1bd81420d32e9410dababa9917515"
+    },
+    {
+        "path":  "shared/constants.js",
+        "sha256":  "4487c81ae2e768bde034ef559389710f2bcb153176214c244412df9a591b5cc6"
+    },
+    {
+        "path":  "shared/fixtures/snake-fixtures.json",
+        "sha256":  "8cfb6134a90bfee1e368850c2f0c765edd6a9623a7ab36a8d7dceb74828d2c0e"
+    },
+    {
+        "path":  "shared/protocol.json",
+        "sha256":  "1982b90dd3b436dbb99981636f34833de26a80011609bb61c8f26f9b77ddf563"
+    },
+    {
+        "path":  "test/client/integration-ui-seam.test.js",
+        "sha256":  "30504fdb21fc4c5c7345328d4d04aac1a3fa81aa6b833e228784527a632b2042"
+    },
+    {
+        "path":  "test/client/recovery-model.test.js",
+        "sha256":  "e61685d70d49c70e4543351e62be329dacaa4a1fa28fc01ec5a921743deaac72"
+    },
+    {
+        "path":  "test/client/recovery-renderers.test.js",
+        "sha256":  "66434b1e28bbac4ed61ac6345471b407e46165cb66353aaab1a943c6f27af26f"
+    },
+    {
+        "path":  "test/rooms/recovery-admission.test.js",
+        "sha256":  "ddf098e469686ff42804702884a05963166ab3632ece7b7bcfddf21f85b4f0e8"
+    },
+    {
+        "path":  "test/rooms/recovery-lifecycle-rematch.test.js",
+        "sha256":  "87260bfed2d41ab6d3177af81a483f20d32394214b27ae706fd61828e584b605"
+    },
+    {
+        "path":  "test/rules/recovery-arena.test.js",
+        "sha256":  "f06a930991cefcd0dc9a88ed6e53a6d6ae16a1a1bb081e58f5b443c2245a4ea4"
+    },
+    {
+        "path":  "test/rules/recovery-round.test.js",
+        "sha256":  "d68c8d292e562c2c6920910ab3a2c6f9de2e91aed58090805e98c02625bdd3e7"
+    },
+    {
+        "path":  "test/rules/recovery-turns-food-collision.test.js",
+        "sha256":  "702c844a36cbe9503455a9f79412e84082dd5c90812f3e9172f6f043561c8ffd"
+    },
+    {
+        "path":  "test/security/recovery-validation.test.js",
+        "sha256":  "1685a978ca1b65eb56a0fc2fb7c9f2927056c9557c8f7b15352c61d4c4ad8828"
+    },
+    {
+        "path":  "test/transport/integration-packaging.test.js",
+        "sha256":  "0b0406fdd4f061ee9be7cadf00eef821f48d2e5459106e9d1adb921d01f36b84"
+    },
+    {
+        "path":  "test/transport/recovery-room-play-rematch.test.js",
+        "sha256":  "a2db9099e680d2f5774b4f9a5b72667c795c00c192b060b5931b5709e9c92c0e"
+    },
+    {
+        "path":  "test/transport/recovery-wire.test.js",
+        "sha256":  "2c249cf575a19f0da717c6c231324b1f4bac4b49b557de7c2a69258239e38f8a"
+    }
+]

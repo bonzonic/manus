@@ -1,0 +1,6 @@
+{
+  "name": "browser-task-agent",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module"
+}

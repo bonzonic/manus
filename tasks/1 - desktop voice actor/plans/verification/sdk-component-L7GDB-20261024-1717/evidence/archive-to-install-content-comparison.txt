@@ -1,0 +1,10 @@
+verifier=om-verifier sdk-component-L7GDB-20261024-1717
+timestamp_utc=2026-10-24T09:20:25.5611902Z
+archive_path=C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\acquisition\dotnet-sdk-10.0.402-win-x64.zip
+install_root=C:\Users\wongn\Documents\Interview\Manus\tasks\1 - desktop voice actor\.work\worktrees\voice-b0-toolchain-L7GDB\.work\tools\dotnet
+zip_file_entry_count=5577
+installed_file_count=5577
+zip_to_install_missing_count=0
+zip_to_install_unexpected_count=0
+zip_to_install_content_mismatch_count=0
+zip_and_install_paths_lengths_hashes_match=True

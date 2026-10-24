@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "scope": "room-code-display-only",
+  "status": "PASS",
+  "startedAt": "2026-10-24T10:31:48.113Z",
+  "completedAt": "2026-10-24T10:31:50.988Z",
+  "processPid": 60288,
+  "processReceiptPath": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-room-code-display-kEUETV\\evidence\\frame-payload-corrected-rerun\\qa-process-receipt.json",
+  "baselineSHA": "afd285f6c85cfa4638fbcd84973d1ae1bfa41e35",
+  "candidateSHA": "10fab9395979a76c076c6c5474a5b1b0dce2177c",
+  "driver": {
+    "playwright": "1.56.1",
+    "playwrightModule": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\tools\\browser-qa\\node_modules\\playwright\\index.mjs",
+    "chromeExecutable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "headless": true,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "deviceScaleFactor": 1
+  },
+  "arms": {
+    "baseline": {
+      "arm": "baseline",
+      "project": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-room-code-baseline-20261024-kEUETV\\project",
+      "sourceSHA": "afd285f6c85cfa4638fbcd84973d1ae1bfa41e35",
+      "sourceHash": "8ed0a11d23777c0fc3aa9e7a254d59148fa0dc05652fca5d340aff730affa878",
+      "sourceHashAlgorithm": "sha256",
+      "copyInviteSourceCheck": "MODEL_ROOM_CODE_CONFIRMED",
+      "authoritativeCode": "YYCHABXV",
+      "domValue": {
+        "header": "--------",
+        "copySources": [
+          "--------"
+        ]
+      },
+      "initialDomValue": {
+        "header": "--------",
+        "copySources": [
+          "--------"
+        ]
+      },
+      "roomCreated": {
+        "panelVisible": true,
+        "readyButtonVisible": true,
+        "readyButtonText": "Ready up"
+      },
+      "codeSupportStatus": "OBSERVED_NETWORK_WELCOME",
+      "sanitizedTrace": [
+        {
+          "type": "welcome",
+          "roomCode": "YYCHABXV"
+        },
+        {
+          "type": "snapshot"
+        },
+        {
+          "type": "snapshot"
+        },
+        {
+          "type": "snapshot"
+        }
+      ],
+      "screenshotPaths": {
+        "before": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-room-code-display-kEUETV\\evidence\\frame-payload-corrected-rerun\\screenshots\\baseline-before.png",
+        "after": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-room-code-display-kEUETV\\evidence\\frame-payload-corrected-rerun\\screenshots\\baseline-after.png"
+      },
+      "status": "BASELINE_RED_CONFIRMED",
+      "cleanupReceipt": {
+        "qaProcessPid": 60288,
+        "ownedPids": [
+          60288,
+          31436
+        ],
+        "errors": [],
+        "browserContext": {
+          "attempted": true,
+          "closed": true
+        },
+        "browserConnection": {
+          "attempted": true,
+          "closed": true
+        },
+        "browserServer": {
+          "attempted": true,
+          "closed": true
+        },
+        "inProcessServer": {
+          "attempted": true,
+          "closed": true
+        },
+        "closedAt": "2026-10-24T10:31:49.758Z",
+        "complete": true,
+        "status": "CLOSED"
+      },
+      "startedAt": "2026-10-24T10:31:48.498Z",
+      "server": {
+        "pid": 60288,
+        "host": "127.0.0.1",
+        "requestedPort": 0,
+        "allowedOriginsReference": "same-mutable-array",
+        "baseURL": "http://127.0.0.1:63544",
+        "actualOrigin": "http://127.0.0.1:63544",
+        "allowedOrigins": [
+          "http://127.0.0.1:63544",
+          "http://localhost:63544"
+        ]
+      },
+      "browserServer": {
+        "pid": 31436,
+        "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "launchMode": "launchServer",
+        "connectMode": "connect(wsEndpoint)"
+      },
+      "durationMs": 1260,
+      "completedAt": "2026-10-24T10:31:49.758Z"
+    },
+    "candidate": {
+      "arm": "candidate",
+      "project": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-room-code-fix-20261024-kEUETV\\project",
+      "sourceSHA": "10fab9395979a76c076c6c5474a5b1b0dce2177c",
+      "sourceHash": "13c13904fc5e27697a21439d6ca3c744e56fd2b9955a1b486cc541035dcb8da5",
+      "sourceHashAlgorithm": "sha256",
+      "copyInviteSourceCheck": "MODEL_ROOM_CODE_CONFIRMED",
+      "authoritativeCode": "4MW7YG9Q",
+      "domValue": {
+        "header": "4MW7YG9Q",
+        "copySources": [
+          "4MW7YG9Q"
+        ]
+      },
+      "initialDomValue": {
+        "header": "--------",
+        "copySources": [
+          "--------"
+        ]
+      },
+      "roomCreated": {
+        "panelVisible": true,
+        "readyButtonVisible": true,
+        "readyButtonText": "Ready up"
+      },
+      "codeSupportStatus": "OBSERVED_NETWORK_WELCOME",
+      "sanitizedTrace": [
+        {
+          "type": "welcome",
+          "roomCode": "4MW7YG9Q"
+        },
+        {
+          "type": "snapshot"
+        },
+        {
+          "type": "snapshot"
+        }
+      ],
+      "screenshotPaths": {
+        "before": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-room-code-display-kEUETV\\evidence\\frame-payload-corrected-rerun\\screenshots\\candidate-before.png",
+        "after": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-room-code-display-kEUETV\\evidence\\frame-payload-corrected-rerun\\screenshots\\candidate-after.png"
+      },
+      "status": "CANDIDATE_GREEN_CONFIRMED",
+      "cleanupReceipt": {
+        "qaProcessPid": 60288,
+        "ownedPids": [
+          60288,
+          55460
+        ],
+        "errors": [],
+        "browserContext": {
+          "attempted": true,
+          "closed": true
+        },
+        "browserConnection": {
+          "attempted": true,
+          "closed": true
+        },
+        "browserServer": {
+          "attempted": true,
+          "closed": true
+        },
+        "inProcessServer": {
+          "attempted": true,
+          "closed": true
+        },
+        "closedAt": "2026-10-24T10:31:50.988Z",
+        "complete": true,
+        "status": "CLOSED"
+      },
+      "startedAt": "2026-10-24T10:31:49.758Z",
+      "server": {
+        "pid": 60288,
+        "host": "127.0.0.1",
+        "requestedPort": 0,
+        "allowedOriginsReference": "same-mutable-array",
+        "baseURL": "http://127.0.0.1:58072",
+        "actualOrigin": "http://127.0.0.1:58072",
+        "allowedOrigins": [
+          "http://127.0.0.1:58072",
+          "http://localhost:58072"
+        ]
+      },
+      "browserServer": {
+        "pid": 55460,
+        "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "launchMode": "launchServer",
+        "connectMode": "connect(wsEndpoint)"
+      },
+      "durationMs": 1230,
+      "completedAt": "2026-10-24T10:31:50.988Z"
+    }
+  },
+  "cleanupReceipt": {
+    "qaProcessPid": 60288,
+    "ownedPids": [
+      60288
+    ],
+    "errors": [],
+    "closedAt": "2026-10-24T10:31:50.988Z",
+    "complete": true,
+    "status": "CLOSED",
+    "processesRemaining": []
+  },
+  "caveat": "PASS is limited to raw local room-code display checks; it is not a whole-game, public S10, gameplay, reconnect, deployment, or MVP verdict.",
+  "durationMs": 2875,
+  "within60Seconds": true
+}

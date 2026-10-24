@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "candidateSha": "afd285f6c85cfa4638fbcd84973d1ae1bfa41e35",
+    "baselineSha": "0c3155d560692d4042c5fdb7cb6a569cbf4c0cee",
+    "rttMs": 150,
+    "jitterMs": 25,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "narrowViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "note": "All credential-like fields are redacted. This trace is evidence, not a verdict."
+  },
+  "events": [
+    {
+      "ts": "2026-10-24T09:54:42.848Z",
+      "elapsedMs": 37,
+      "kind": "identity",
+      "candidateSha": "afd285f6c85cfa4638fbcd84973d1ae1bfa41e35",
+      "baselineSha": "0c3155d560692d4042c5fdb7cb6a569cbf4c0cee",
+      "project": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-mvp-verifier-v2-20261024-kEUETV\\project",
+      "conduitPid": 11316,
+      "parentPid": 37224
+    },
+    {
+      "ts": "2026-10-24T09:54:42.893Z",
+      "elapsedMs": 82,
+      "kind": "pure-fixture",
+      "name": "arena-bounds-and-legal-food",
+      "status": "PASS"
+    },
+    {
+      "ts": "2026-10-24T09:54:42.894Z",
+      "elapsedMs": 83,
+      "kind": "pure-fixture",
+      "name": "round-shape-and-mirrored-spawn",
+      "status": "PASS"
+    },
+    {
+      "ts": "2026-10-24T09:54:42.895Z",
+      "elapsedMs": 84,
+      "kind": "pure-fixture",
+      "name": "turn-queue-reversal-and-cap",
+      "status": "PASS"
+    },
+    {
+      "ts": "2026-10-24T09:54:42.896Z",
+      "elapsedMs": 85,
+      "kind": "pure-fixture",
+      "name": "apple-growth-exactly-one",
+      "status": "PASS"
+    },
+    {
+      "ts": "2026-10-24T09:54:42.897Z",
+      "elapsedMs": 86,
+      "kind": "pure-fixture",
+      "name": "mushroom-boost-refresh-and-pause-freeze",
+      "status": "PASS"
+    },
+    {
+      "ts": "2026-10-24T09:54:42.898Z",
+      "elapsedMs": 87,
+      "kind": "pure-fixture",
+      "name": "head-swap-and-terminal-pickup-suppression",
+      "status": "PASS"
+    },
+    {
+      "ts": "2026-10-24T09:54:42.898Z",
+      "elapsedMs": 87,
+      "kind": "pure-fixture",
+      "name": "protocol-message-size-origin-and-authority-boundary",
+      "status": "PASS"
+    },
+    {
+      "ts": "2026-10-24T09:54:42.900Z",
+      "elapsedMs": 89,
+      "kind": "pure-fixture",
+      "name": "room-admission-ready-rematch-and-expiry-fixture",
+      "status": "PASS"
+    },
+    {
+      "ts": "2026-10-24T09:54:42.902Z",
+      "elapsedMs": 91,
+      "kind": "measurement",
+      "name": "stale-epoch-resume-rejected",
+      "status": "PASS",
+      "observedCode": "CREDENTIAL_INVALID"
+    },
+    {
+      "ts": "2026-10-24T09:54:42.903Z",
+      "elapsedMs": 92,
+      "kind": "measurement",
+      "name": "same-seat-epoch-advances-on-resume",
+      "status": "PASS",
+      "oldEpoch": 1,
+      "newEpoch": 2,
+      "phase": "RESUMING"
+    },
+    {
+      "ts": "2026-10-24T09:54:42.903Z",
+      "elapsedMs": 92,
+      "kind": "measurement",
+      "name": "old-socket-control-rejected-after-resume",
+      "status": "PASS",
+      "observedCode": "NOT_MEMBER",
+      "responseTypes": [
+        "error"
+      ]
+    },
+    {
+      "ts": "2026-10-24T09:54:42.904Z",
+      "elapsedMs": 93,
+      "kind": "measurement",
+      "name": "both-absent-expiry-does-not-fabricate-winner",
+      "status": "PASS",
+      "phase": "ABANDONED",
+      "winner": null
+    },
+    {
+      "ts": "2026-10-24T09:54:42.905Z",
+      "elapsedMs": 94,
+      "kind": "lifecycle-seam-summary",
+      "readyResponseTypes": [],
+      "disconnectResponseTypes": [],
+      "roomPhase": "RESULTS",
+      "note": "Uses the candidate room-manager public seam only; no fake browser client or product endpoint."
+    },
+    {
+      "ts": "2026-10-24T09:54:43.314Z",
+      "elapsedMs": 503,
+      "kind": "server-started",
+      "baseUrl": "http://127.0.0.1:51467/",
+      "port": 51467,
+      "serverPid": 11316,
+      "conduitPid": 11316,
+      "candidateProject": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-mvp-verifier-v2-20261024-kEUETV\\project"
+    },
+    {
+      "ts": "2026-10-24T09:54:43.328Z",
+      "elapsedMs": 517,
+      "kind": "origin-probe",
+      "label": "evil-origin",
+      "origin": "https://evil.example",
+      "opened": true,
+      "closeCode": null,
+      "closeReason": null,
+      "messages": [
+        {
+          "type": "error",
+          "code": "BAD_ORIGIN",
+          "bytes": 83
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-24T09:54:43.330Z",
+      "elapsedMs": 519,
+      "kind": "origin-probe",
+      "label": "absent-origin",
+      "origin": "[ABSENT]",
+      "opened": true,
+      "closeCode": null,
+      "closeReason": null,
+      "messages": [
+        {
+          "type": "error",
+          "code": "BAD_ORIGIN",
+          "bytes": 83
+        }
+      ]
+    },
+    {
+      "ts": "2026-10-24T09:54:43.330Z",
+      "elapsedMs": 519,
+      "kind": "measurement",
+      "name": "runtime-origin-rejection",
+      "status": "PASS",
+      "wsUrl": "ws://127.0.0.1:51467/ws",
+      "probes": [
+        {
+          "label": "evil-origin",
+          "origin": "https://evil.example",
+          "opened": true,
+          "badOrigin": true,
+          "welcome": false,
+          "closeCode": null
+        },
+        {
+          "label": "absent-origin",
+          "origin": "[ABSENT]",
+          "opened": true,
+          "badOrigin": true,
+          "welcome": false,
+          "closeCode": null
+        }
+      ],
+      "note": "Transport-only admission probes; no room or gameplay state is injected."
+    },
+    {
+      "ts": "2026-10-24T09:54:43.810Z",
+      "elapsedMs": 999,
+      "kind": "browser-process-started",
+      "pid": 59852,
+      "launchMode": "chromium.launchServer + chromium.connect",
+      "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    },
+    {
+      "ts": "2026-10-24T09:54:44.163Z",
+      "elapsedMs": 1352,
+      "kind": "console",
+      "role": "P1",
+      "level": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "ts": "2026-10-24T09:54:44.163Z",
+      "elapsedMs": 1352,
+      "kind": "navigated",
+      "role": "P1",
+      "url": "http://127.0.0.1:51467/",
+      "title": "Wayfinder Grid · Multiplayer Snake"
+    },
+    {
+      "ts": "2026-10-24T09:54:44.252Z",
+      "elapsedMs": 1441,
+      "kind": "dom-contract",
+      "role": "P1",
+      "expected": 47,
+      "missing": [],
+      "status": "PASS"
+    },
+    {
+      "ts": "2026-10-24T09:54:44.479Z",
+      "elapsedMs": 1668,
+      "kind": "screenshot",
+      "name": "p1-entry-1440x900",
+      "file": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-snake-candidate-v2-kEUETV\\evidence\\p1-entry-1440x900.png"
+    },
+    {
+      "ts": "2026-10-24T09:54:44.511Z",
+      "elapsedMs": 1700,
+      "kind": "ws-route-installed",
+      "role": "P1",
+      "pattern": "**/ws",
+      "rttMs": 150,
+      "jitterMs": 25,
+      "model": "real routeWebSocket forwarding with symmetric per-message one-way delay"
+    },
+    {
+      "ts": "2026-10-24T09:54:44.522Z",
+      "elapsedMs": 1711,
+      "kind": "ws-message-scheduled",
+      "role": "P1",
+      "direction": "browser-to-server",
+      "delayMs": 81,
+      "encoding": "json",
+      "bytes": 68,
+      "type": "hello",
+      "mode": "CREATE",
+      "phase": null,
+      "roomId": null,
+      "roundId": null,
+      "revision": null,
+      "serverTick": null,
+      "activeTicks": null,
+      "requestId": "h-1792835684507",
+      "disposition": null,
+      "code": null,
+      "seat": null,
+      "epoch": null,
+      "body": {
+        "v": 1,
+        "type": "hello",
+        "requestId": "h-1792835684507",
+        "mode": "CREATE"
+      },
+      "transportTime": "2026-10-24T09:54:44.522Z"
+    },
+    {
+      "ts": "2026-10-24T09:54:44.522Z",
+      "elapsedMs": 1711,
+      "kind": "ws-message-scheduled",
+      "role": "P1",
+      "direction": "server-to-browser",
+      "delayMs": 72,
+      "encoding": "json",
+      "bytes": 83,
+      "type": "error",
+      "mode": null,
+      "phase": null,
+      "roomId": null,
+      "roundId": null,
+      "revision": null,
+      "serverTick": null,
+      "activeTicks": null,
+      "requestId": null,
+      "disposition": null,
+      "code": "BAD_ORIGIN",
+      "seat": null,
+      "epoch": null,
+      "body": {
+        "v": 1,
+        "type": "error",
+        "code": "BAD_ORIGIN",
+        "message": "bad origin",
+        "retryable": false
+      },
+      "transportTime": "2026-10-24T09:54:44.522Z"
+    },
+    {
+      "ts": "2026-10-24T09:54:44.607Z",
+      "elapsedMs": 1796,
+      "kind": "ws-message-forwarded",
+      "role": "P1",
+      "direction": "server-to-browser",
+      "delayMs": 72,
+      "encoding": "json",
+      "bytes": 83,
+      "type": "error",
+      "mode": null,
+      "phase": null,
+      "roomId": null,
+      "roundId": null,
+      "revision": null,
+      "serverTick": null,
+      "activeTicks": null,
+      "requestId": null,
+      "disposition": null,
+      "code": "BAD_ORIGIN",
+      "seat": null,
+      "epoch": null,
+      "body": {
+        "v": 1,
+        "type": "error",
+        "code": "BAD_ORIGIN",
+        "message": "bad origin",
+        "retryable": false
+      }
+    },
+    {
+      "ts": "2026-10-24T09:54:44.607Z",
+      "elapsedMs": 1796,
+      "kind": "ws-message-forwarded",
+      "role": "P1",
+      "direction": "browser-to-server",
+      "delayMs": 81,
+      "encoding": "json",
+      "bytes": 68,
+      "type": "hello",
+      "mode": "CREATE",
+      "phase": null,
+      "roomId": null,
+      "roundId": null,
+      "revision": null,
+      "serverTick": null,
+      "activeTicks": null,
+      "requestId": "h-1792835684507",
+      "disposition": null,
+      "code": null,
+      "seat": null,
+      "epoch": null,
+      "body": {
+        "v": 1,
+        "type": "hello",
+        "requestId": "h-1792835684507",
+        "mode": "CREATE"
+      }
+    },
+    {
+      "ts": "2026-10-24T09:54:56.618Z",
+      "elapsedMs": 13807,
+      "kind": "browser-disconnected"
+    },
+    {
+      "ts": "2026-10-24T09:54:56.792Z",
+      "elapsedMs": 13981,
+      "kind": "browser-server-close-requested",
+      "pid": 59852
+    },
+    {
+      "ts": "2026-10-24T09:54:56.793Z",
+      "elapsedMs": 13982,
+      "kind": "browser-process-exit",
+      "pid": 59852,
+      "observed": true,
+      "exitCode": 0,
+      "signal": null
+    },
+    {
+      "ts": "2026-10-24T09:54:56.794Z",
+      "elapsedMs": 13983,
+      "kind": "server-stopped",
+      "serverPid": 11316,
+      "exact": true
+    },
+    {
+      "ts": "2026-10-24T09:54:56.794Z",
+      "elapsedMs": 13983,
+      "kind": "fatal",
+      "message": "Timed out waiting for created eight-character room code",
+      "stack": "Error: Timed out waiting for created eight-character room code at file:///C:/Users/wongn/Documents/Interview/Manus/tasks/2%20-%20multiplayer%20web%20game/plans/verification/2026-10-24-snake-candidate-v2-kEUETV/snake-verifier-v2.mjs:451:11 at async browserFlow (file:///C:/Users/wongn/Documents/Interview/Manus/tasks/2%20-%20multiplayer%20web%20game/plans/verification/2026-10-24-snake-candidate-v2-kEUETV/snake-verifier-v2.mjs:798:5) at async main (file:///C:/Users/wongn/Documents/Interview/Manus/tasks/2%20-%20multiplayer%20web%20game/plans/verification/2026-10-24-snake-candidate-v2-kEUETV/snake-verifier-v2.mjs:1071:22)"
+    }
+  ]
+}

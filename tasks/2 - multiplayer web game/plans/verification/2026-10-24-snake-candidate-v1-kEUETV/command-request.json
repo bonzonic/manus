@@ -1,0 +1,18 @@
+{
+  "status": "READY_FOR_PARENT_NETWORK_TRUE_CONDUIT",
+  "candidate_sha": "eebdb1d9408a2002c5971d7c8b4f15ba1f558bed",
+  "baseline_sha": "0c3155d560692d4042c5fdb7cb6a569cbf4c0cee",
+  "script_path": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-snake-candidate-v1-kEUETV\\snake-verifier.mjs",
+  "command_cwd": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game",
+  "exact_command": "node \"C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-snake-candidate-v1-kEUETV\\snake-verifier.mjs\" --candidate-project \"C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-mvp-candidate-20261024-kEUETV\\project\" --evidence-root \"C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-snake-candidate-v1-kEUETV\\evidence\" --playwright-root \"C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\tools\\browser-qa\\node_modules\\playwright\" --expected-sha eebdb1d9408a2002c5971d7c8b4f15ba1f558bed --rtt-ms 150 --jitter-ms 25 --max-seconds 120",
+  "network_required": true,
+  "headless": true,
+  "chrome_executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "latency_model": "real Playwright routeWebSocket forwarding with symmetric one-way delay of RTT/2 +/- jitter/2; 150ms RTT and 25ms jitter",
+  "scoped_run": "One run only. The script starts and closes its own candidate server on an auto-assigned localhost port, creates two fresh contexts, writes screenshots and sanitized trace JSON, and cleans its own resources. Do not add a public URL, test endpoint, fake client state, bot, or deploy.",
+  "expected_outputs": [
+    "plans/verification/2026-10-24-snake-candidate-v1-kEUETV/evidence/run-result.json",
+    "plans/verification/2026-10-24-snake-candidate-v1-kEUETV/evidence/trace-sanitized.json",
+    "plans/verification/2026-10-24-snake-candidate-v1-kEUETV/evidence/*.png"
+  ]
+}

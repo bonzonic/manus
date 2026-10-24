@@ -1,0 +1,20 @@
+TAP version 13
+# Subtest: renderPhase preserves the cold placeholder and keeps every room-code surface consistent across updates
+ok 1 - renderPhase preserves the cold placeholder and keeps every room-code surface consistent across updates
+  ---
+  duration_ms: 1.7017
+  ...
+# Subtest: copy invite remains derived from the model room code after both display surfaces update
+ok 2 - copy invite remains derived from the model room code after both display surfaces update
+  ---
+  duration_ms: 1.2503
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 81.5947

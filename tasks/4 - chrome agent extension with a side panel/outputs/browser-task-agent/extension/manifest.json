@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Task Agent",
+  "version": "0.2.0",
+  "description": "A supervised rendered-page browser task agent with exact approvals.",
+  "permissions": ["sidePanel", "activeTab", "scripting", "storage"],
+  "host_permissions": ["https://openrouter.ai/*"],
+  "action": { "default_title": "Open Browser Task Agent" },
+  "side_panel": { "default_path": "panel.html" },
+  "background": { "service_worker": "worker.js", "type": "module" },
+  "content_security_policy": { "extension_pages": "script-src 'self'; object-src 'self'" }
+}

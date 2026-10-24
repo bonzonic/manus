@@ -1,0 +1,28 @@
+﻿{
+    "device":  "device:26d10d73-0966-4b78-b72f-9a97d38e8663",
+    "host":  "DESKTOP-7688RV3",
+    "source":  "Windows Get-Counter + Microsoft.VisualBasic.Devices.ComputerInfo",
+    "total_physical_bytes":  34193793024,
+    "samples":  [
+                    {
+                        "at":  "2026-10-24T18:29:32.6448293+08:00",
+                        "cpu_percent":  23.115,
+                        "available_memory_mib":  8767,
+                        "physical_memory_percent":  73.115
+                    },
+                    {
+                        "at":  "2026-10-24T18:29:37.6961810+08:00",
+                        "cpu_percent":  21.645,
+                        "available_memory_mib":  8789,
+                        "physical_memory_percent":  73.048
+                    },
+                    {
+                        "at":  "2026-10-24T18:29:42.7117570+08:00",
+                        "cpu_percent":  20.307,
+                        "available_memory_mib":  8758,
+                        "physical_memory_percent":  73.143
+                    }
+                ],
+    "go":  true,
+    "latest_sample_max_age_seconds":  30
+}

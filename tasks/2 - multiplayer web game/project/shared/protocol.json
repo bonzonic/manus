@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "clientMessages": ["hello", "turn", "ready", "rematch", "leave"],
+  "serverMessages": ["welcome", "inputAck", "snapshot", "effect", "result", "error"],
+  "seats": ["P1", "P2"],
+  "phases": ["LOBBY", "COUNTDOWN", "PLAYING", "PAUSED", "RESUMING", "RESULTS", "ABANDONED"],
+  "board": { "w": 40, "h": 24 },
+  "limits": { "maxMessageBytes": 4096, "maxSnapshotBytes": 32768, "maxOutputQueueBytes": 65536, "maxTurnQueue": 2 }
+}

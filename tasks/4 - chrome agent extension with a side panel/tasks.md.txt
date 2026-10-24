@@ -1,0 +1,12 @@
+4. Chrome agent extension with a Side Panel
+Build a Chrome extension. In the Side Panel, the user describes in natural language what they want to get done; the agent understands the current page and browser state and helps carry out the task through browser actions.
+
+At a minimum, the product should read the necessary information from the current page and complete several consecutive actions on real web pages, such as finding content, scrolling, clicking, filling in forms or managing tabs. The user needs to know what the agent is about to do, what it is doing, and whether it ultimately succeeded.
+
+Things worth thinking about:
+
+First use and permissions: how users understand what the extension can do, how they install and authorize it, and how to avoid asking for permissions on all sites and the whole browser up front;
+How the agent interacts: whether the plan should be shown; how users add information, pause, cancel or retry; which steps can run automatically and which should be previewed first;
+Page understanding and reliable actions: how to handle dynamic pages, SPAs, navigation, pop-ups, changing elements, login state and different site structures;
+Safety and a sense of control: how to confirm actions with external effects such as sending messages, submitting forms, purchasing or deleting, and how to handle sensitive fields and malicious instructions embedded in web pages;
+Failure recovery and explainability: how the agent notices and recovers when it cannot find an element, the page changes, or the result does not match expectations.

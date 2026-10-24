@@ -1,0 +1,11 @@
+{
+    "baseline_sha":  "afd285f6c85cfa4638fbcd84973d1ae1bfa41e35",
+    "baseline_worktree":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-room-code-baseline-20261024-kEUETV",
+    "fix_worktree":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-room-code-fix-20261024-kEUETV",
+    "shared_project":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\project",
+    "source_files_checked":  39,
+    "shared_sources_match_baseline":  true,
+    "existing_user_server_untouched":  true,
+    "work_item_dir":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\runs\\2026-10-24-room-code-display-kEUETV",
+    "defect":  "Room-created dialog keeps dashed placeholder after successful CREATE; reporter screenshot"
+}

@@ -1,0 +1,18 @@
+{
+  "processPid": 60288,
+  "startedAt": "2026-10-24T10:31:48.113Z",
+  "nodeVersion": "v22.12.0",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-room-code-display-kEUETV\\room-code-browser-check-frame-payload-corrected.mjs",
+    "--baseline-project",
+    "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-room-code-baseline-20261024-kEUETV\\project",
+    "--candidate-project",
+    "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-room-code-fix-20261024-kEUETV\\project",
+    "--candidate-sha",
+    "10fab9395979a76c076c6c5474a5b1b0dce2177c",
+    "--evidence-root",
+    "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-room-code-display-kEUETV\\evidence\\frame-payload-corrected-rerun"
+  ],
+  "note": "Persisted immediately by direct node QA process before server/browser launch."
+}

@@ -1,0 +1,118 @@
+﻿{
+    "version":  "0.2.0",
+    "nativeSidePanel":  "UNVERIFIED",
+    "files":  [
+                  {
+                      "path":  "bridge.js",
+                      "sha256":  "276f4880666bd5fef22098cac118502de07f9c2de46d2a3064e0deade3f61823"
+                  },
+                  {
+                      "path":  "core/admission.js",
+                      "sha256":  "64cbbbe32e06d9465c472cb7f66d442c71bc0ac944c09e0f18bf613c3a069d00"
+                  },
+                  {
+                      "path":  "core/contracts.js",
+                      "sha256":  "608101afc10db1aada4489d613ce6f6601558db62fc4d086aa50159292d602c8"
+                  },
+                  {
+                      "path":  "core/engine.js",
+                      "sha256":  "327298dc12576b3975914eaca1d8a690086ff46169712724fdb161e2187b40f2"
+                  },
+                  {
+                      "path":  "core/logger.js",
+                      "sha256":  "cfb854e971ff9a6b0a93f6e9708bc45ddc6d2821b6ffd7117a67eaf5df9dbbc3"
+                  },
+                  {
+                      "path":  "core/model.js",
+                      "sha256":  "d8a0a180a1ca9dd8a6466a299b157a7b7ae1a899a3fac760eae2c4271211da00"
+                  },
+                  {
+                      "path":  "core/model-catalog.js",
+                      "sha256":  "97296f2cf65ed9e5ca6607bf3b5b27a8b76c9cf1d4b3c272eed22079e23ee734"
+                  },
+                  {
+                      "path":  "core/policy.js",
+                      "sha256":  "0fd1cf7784cf7bed723e9a8afc413dad42a04bbd9e006c54d7ed757bed6a1294"
+                  },
+                  {
+                      "path":  "core/preview.js",
+                      "sha256":  "d314656e9b97b95ef1fefd7f509be91253a80d373690662e8e34e45a49f91703"
+                  },
+                  {
+                      "path":  "core/shopee.js",
+                      "sha256":  "1d82392c48bd103c4f7b3a7c94453d5791cb9cf54e67edf3eee55cb18e535fe2"
+                  },
+                  {
+                      "path":  "core/startup.js",
+                      "sha256":  "9b83903ad3f5abb8be60a5177aa2a417d61aa40000ec136f2026734f42a6bfab"
+                  },
+                  {
+                      "path":  "core/store.js",
+                      "sha256":  "187cd69eb04ae02f2d93290cc25da0c90d7fd17b123f22dc414a8d9c667646d6"
+                  },
+                  {
+                      "path":  "manifest.json",
+                      "sha256":  "eee99a3dc3d1a43edffe062f483359e63d677b4353d450a9bf239fe2003860c7"
+                  },
+                  {
+                      "path":  "package.json",
+                      "sha256":  "45230fbd0b6aa6c2c7603a89465f5f6beb08fbf000ace05f28ca5748914ba514"
+                  },
+                  {
+                      "path":  "panel.css",
+                      "sha256":  "fa0563801edb02ecb961bba2fbf2878480f5ccedd492d128089b09b13796b9c2"
+                  },
+                  {
+                      "path":  "panel.html",
+                      "sha256":  "b85a267007267969477426c5bf885db5a2f67c3c8a2b1a19fa54e345b7f23cd2"
+                  },
+                  {
+                      "path":  "panel.js",
+                      "sha256":  "a29d027868aaf5df20784ee79a6be691bef8033f1d84b64d69aae2b1c4e2f32b"
+                  },
+                  {
+                      "path":  "tests/browser-general.test.mjs",
+                      "sha256":  "3a253932145c72fa4b7d6c7cc405680db1e8eb48433af51bc2a50fe33b3adc6d"
+                  },
+                  {
+                      "path":  "tests/engine.test.mjs",
+                      "sha256":  "45628197dacfd5cc372fc0eb9a90ea2cb551056cd5c84cfe7058f4011c602d73"
+                  },
+                  {
+                      "path":  "tests/logger.test.mjs",
+                      "sha256":  "77992df414b7cab4b697ac068090edda43f8c4e6d7a711df9deaad8b44ee4d48"
+                  },
+                  {
+                      "path":  "tests/manifest.test.mjs",
+                      "sha256":  "77c282244d83e4d39746f5dd1c7a2bbfa998961a615b1be66af647221c2d3825"
+                  },
+                  {
+                      "path":  "tests/model.test.mjs",
+                      "sha256":  "d59aa902dad6fa0450f0023a12a1b07d912515765ed0ac4705f003970bdfee0e"
+                  },
+                  {
+                      "path":  "tests/policy.test.mjs",
+                      "sha256":  "b46bbdf823908da8c9bacf45b2b6ab5ca2302f8ff5f64be1ad5304de6805445c"
+                  },
+                  {
+                      "path":  "tests/privacy-amendment.test.mjs",
+                      "sha256":  "18e1dd839843efbb83297ea0473617d7a1a12f563b68e105eacd8dc999a10098"
+                  },
+                  {
+                      "path":  "tests/safety-repair.test.mjs",
+                      "sha256":  "a70b7217348c48fc2c0c2438e38c7b0efa889c6abe8b94ce5293046ad84cff7f"
+                  },
+                  {
+                      "path":  "tests/shopee.test.mjs",
+                      "sha256":  "14facc0b865fd13779e57c4612c3e215cd7d13c254a99963c3973e533e6e6310"
+                  },
+                  {
+                      "path":  "worker.js",
+                      "sha256":  "1248d9f4497bc50f7a5bea2742aa54b628f3c8145744736b9bd72acd0c932bfe"
+                  }
+              ],
+    "type":  "private-local-test-build",
+    "product":  "Browser Task Agent",
+    "sourceReceipt":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\4 - chrome agent extension with a side panel\\.work\\qa-evidence\\browser-agent-final-hashes.json",
+    "verificationReport":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\4 - chrome agent extension with a side panel\\outputs\\planning\\verification\\browser-agent-final-20261024-YYvz4\\verify-report.md"
+}

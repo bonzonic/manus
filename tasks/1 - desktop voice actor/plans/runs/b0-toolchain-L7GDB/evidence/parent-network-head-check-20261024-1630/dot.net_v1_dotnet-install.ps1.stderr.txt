@@ -1,0 +1,9 @@
+* Host dot.net:443 was resolved.
+* IPv6: (none)
+* IPv4: 20.112.250.133, 20.236.44.162, 20.231.239.246, 20.70.246.20, 20.76.201.171
+*   Trying 20.112.250.133:443...
+*   Trying 20.236.44.162:443...
+* schannel: disabled automatic use of client certificate
+* schannel: AcquireCredentialsHandle failed: SEC_E_NO_CREDENTIALS (0x8009030e) - No credentials are available in the security package
+* closing connection #0
+curl: (35) schannel: AcquireCredentialsHandle failed: SEC_E_NO_CREDENTIALS (0x8009030e) - No credentials are available in the security package

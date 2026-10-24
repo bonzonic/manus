@@ -1,0 +1,155 @@
+{
+  "status": "MEASUREMENT_BLOCKED_OR_INCOMPLETE",
+  "candidateSha": "afd285f6c85cfa4638fbcd84973d1ae1bfa41e35",
+  "observedCandidateSha": "afd285f6c85cfa4638fbcd84973d1ae1bfa41e35",
+  "baselineSha": "0c3155d560692d4042c5fdb7cb6a569cbf4c0cee",
+  "startedAt": "2026-10-24T09:54:42.811Z",
+  "config": {
+    "project": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\worktrees\\snake-mvp-verifier-v2-20261024-kEUETV\\project",
+    "evidenceRoot": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-snake-candidate-v2-kEUETV\\evidence",
+    "playwrightRoot": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\.work\\tools\\browser-qa\\node_modules\\playwright",
+    "rttMs": 150,
+    "jitterMs": 25,
+    "maxSeconds": 180,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "narrowViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "latencyMechanism": "Playwright 1.56.1 routeWebSocket",
+    "publicS10": "BLOCKED_UNLESS_SEPARATE_AUTHORIZED_PUBLIC_HTTPS_WSS_EVIDENCE_IS_SUPPLIED"
+  },
+  "pure": {
+    "passed": true,
+    "fixtures": [
+      {
+        "name": "arena-bounds-and-legal-food",
+        "status": "PASS"
+      },
+      {
+        "name": "round-shape-and-mirrored-spawn",
+        "status": "PASS"
+      },
+      {
+        "name": "turn-queue-reversal-and-cap",
+        "status": "PASS"
+      },
+      {
+        "name": "apple-growth-exactly-one",
+        "status": "PASS"
+      },
+      {
+        "name": "mushroom-boost-refresh-and-pause-freeze",
+        "status": "PASS"
+      },
+      {
+        "name": "head-swap-and-terminal-pickup-suppression",
+        "status": "PASS"
+      },
+      {
+        "name": "protocol-message-size-origin-and-authority-boundary",
+        "status": "PASS"
+      },
+      {
+        "name": "room-admission-ready-rematch-and-expiry-fixture",
+        "status": "PASS"
+      }
+    ]
+  },
+  "lifecycle": {
+    "status": "MEASURED_PUBLIC_SEAM",
+    "checks": [
+      {
+        "name": "stale-epoch-resume-rejected",
+        "status": "PASS",
+        "observedCode": "CREDENTIAL_INVALID"
+      },
+      {
+        "name": "same-seat-epoch-advances-on-resume",
+        "status": "PASS",
+        "oldEpoch": 1,
+        "newEpoch": 2,
+        "phase": "RESUMING"
+      },
+      {
+        "name": "old-socket-control-rejected-after-resume",
+        "status": "PASS",
+        "observedCode": "NOT_MEMBER",
+        "responseTypes": [
+          "error"
+        ]
+      },
+      {
+        "name": "both-absent-expiry-does-not-fabricate-winner",
+        "status": "PASS",
+        "phase": "ABANDONED",
+        "winner": null
+      }
+    ]
+  },
+  "browser": null,
+  "checks": [
+    {
+      "name": "stale-epoch-resume-rejected",
+      "status": "PASS",
+      "observedCode": "CREDENTIAL_INVALID"
+    },
+    {
+      "name": "same-seat-epoch-advances-on-resume",
+      "status": "PASS",
+      "oldEpoch": 1,
+      "newEpoch": 2,
+      "phase": "RESUMING"
+    },
+    {
+      "name": "old-socket-control-rejected-after-resume",
+      "status": "PASS",
+      "observedCode": "NOT_MEMBER",
+      "responseTypes": [
+        "error"
+      ]
+    },
+    {
+      "name": "both-absent-expiry-does-not-fabricate-winner",
+      "status": "PASS",
+      "phase": "ABANDONED",
+      "winner": null
+    },
+    {
+      "name": "runtime-origin-rejection",
+      "status": "PASS",
+      "wsUrl": "ws://127.0.0.1:51467/ws",
+      "probes": [
+        {
+          "label": "evil-origin",
+          "origin": "https://evil.example",
+          "opened": true,
+          "badOrigin": true,
+          "welcome": false,
+          "closeCode": null
+        },
+        {
+          "label": "absent-origin",
+          "origin": "[ABSENT]",
+          "opened": true,
+          "badOrigin": true,
+          "welcome": false,
+          "closeCode": null
+        }
+      ],
+      "note": "Transport-only admission probes; no room or gameplay state is injected."
+    }
+  ],
+  "fatal": {
+    "message": "Timed out waiting for created eight-character room code",
+    "stack": "Error: Timed out waiting for created eight-character room code at file:///C:/Users/wongn/Documents/Interview/Manus/tasks/2%20-%20multiplayer%20web%20game/plans/verification/2026-10-24-snake-candidate-v2-kEUETV/snake-verifier-v2.mjs:451:11 at async browserFlow (file:///C:/Users/wongn/Documents/Interview/Manus/tasks/2%20-%20multiplayer%20web%20game/plans/verification/2026-10-24-snake-candidate-v2-kEUETV/snake-verifier-v2.mjs:798:5) at async main (file:///C:/Users/wongn/Documents/Interview/Manus/tasks/2%20-%20multiplayer%20web%20game/plans/verification/2026-10-24-snake-candidate-v2-kEUETV/snake-verifier-v2.mjs:1071:22)"
+  },
+  "eventsFile": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-snake-candidate-v2-kEUETV\\evidence\\trace-sanitized.json",
+  "processReceipt": "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\2 - multiplayer web game\\plans\\verification\\2026-10-24-snake-candidate-v2-kEUETV\\evidence\\process-receipt.json",
+  "finishedAt": "2026-10-24T09:54:56.794Z",
+  "durationMs": 13984
+}

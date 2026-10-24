@@ -1,0 +1,75 @@
+﻿{
+    "schemaVersion":  "package-probe-source-manifest-v2",
+    "workItem":  "b0-toolchain-L7GDB",
+    "baseline":  "0c3155d560692d4042c5fdb7cb6a569cbf4c0cee",
+    "generatedAt":  "2026-10-24T09:35:05.8327292Z",
+    "sourceScope":  "disposable .work/b0-probe plus .work/acquisition/nuget only; no production src",
+    "files":  [
+                  {
+                      "path":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\acquisition\\nuget\\nuget-acquisition-helper.js",
+                      "bytes":  19289,
+                      "sha256":  "404e748c68a40bf3baf9f8405bc05bed78f09f40f1f8996aff5397c77cfe2e02",
+                      "sha512":  "4599009decbe44ae3ed3fe7eb42bb9edc589a2734de4cf38f74429a27c2ad4a1ec680652439ac56c1b2b2e0313aa5465cf8990cb50650a0f33beb82a4658f086"
+                  },
+                  {
+                      "path":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\acquisition\\nuget\\nuget-acquisition-helper.test.js",
+                      "bytes":  7320,
+                      "sha256":  "ab16a89c7b18eee74d250418c758e2000c07b70e348a9dc9bbddda71a6c7b327",
+                      "sha512":  "b127d2900ed06907063e96fb7deb6f6764ad0bb625326863ae7813ab588522a056008e904035ef880b804044af5a22c964edcf96e219fd2a9365c2fe42d2b3c8"
+                  },
+                  {
+                      "path":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\acquisition\\nuget\\nuget-direct-manifest-v2.json",
+                      "bytes":  5235,
+                      "sha256":  "d8870a662580b59091e041b25bd25accbabe008a13ecdba35d3b41c9d3a7ddbc",
+                      "sha512":  "9043bc49420539e7c4a360fcdf3e31eaf07b3014abb7948f0d96792751163d19b14044b9cc22d994c35ba32f58e3be9b3fe810d691ada4756600be6f4d8460d3"
+                  },
+                  {
+                      "path":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\acquisition\\nuget\\naudio.wasapi.3.3.0.registration.json",
+                      "bytes":  961,
+                      "sha256":  "5581b5d82ecd453f4847eef176e17136e5484a1517a9f033930ba3da74807a46",
+                      "sha512":  "37a5ab75afd2414a3ec5914e9ea68205cd49f8886a9b00b9a1e59630016ba687a85386a53f3bf9540010786d79358cc5ce60771176586c363250c5e5f1ee01ff"
+                  },
+                  {
+                      "path":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\acquisition\\nuget\\org.k2fsa.sherpa.onnx.2.0.0.registration.json",
+                      "bytes":  1187,
+                      "sha256":  "0b6c34d4823e8fbe289bbe226dfc1253f3c6e5248b407d51e87d344450c140ed",
+                      "sha512":  "01c6a3934acbc27788f6e4a3adfbcac135186d73b1ba11d9a6501177434a9a9525ac7324a2027b0e1defb35704dfe3ea3dabd7fde8a4e812603e51dc4ab9c0e4"
+                  },
+                  {
+                      "path":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\acquisition\\nuget\\org.k2fsa.sherpa.onnx.runtime.win-x64.2.0.0.registration.json",
+                      "bytes":  903,
+                      "sha256":  "d505358e3759232f7c441551bb48c059c74a5d4b7617e8809f7bf576620255d8",
+                      "sha512":  "50872765d8eeb9964883ab5c38a790c1a9d631cf29bcb7479870dfc0b34331072ad7fc90aa3dd53884855eb34fba987de5f95462b1405ed37cdb9dff852f6ac4"
+                  },
+                  {
+                      "path":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\b0-probe\\B0.ToolchainProbe.csproj",
+                      "bytes":  1079,
+                      "sha256":  "eb9cf09b29a4f4bfdf7f9cf303866e4bf0b31472ce1f7148248fd28887fcb633",
+                      "sha512":  "a6c6cf8ba6e6942a3cc77f332e37f25f2119c89512b21bd5d94557296ab932e2c58ee46dec05f81bca01291360f8dca7a279270f07a9b8106d57a2a37fa8093f"
+                  },
+                  {
+                      "path":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\b0-probe\\App.xaml",
+                      "bytes":  208,
+                      "sha256":  "45521b857be68af514ce50ae67eba1f6284b9e4e2ca728f9a1cac1d1319c641f",
+                      "sha512":  "36544b8b7bea02f0fb78fdd8659b71ee6c96fe2a3b020a3d936368dc009030b86ab45953db0002df12887670cbaaf1e32511d9fcaf89baaa14335f64f47e18f9"
+                  },
+                  {
+                      "path":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\b0-probe\\App.xaml.cs",
+                      "bytes":  88,
+                      "sha256":  "ed672e4f9621af8b06dab7401de7e9031c06b1083d6755ed983ceca3a001b2e9",
+                      "sha512":  "126d94c5b3643926e2965c8f8dbb8d4c567ef409806c101697afa5a76d0351fb149f6c24a9db07a81182adc66b06114fe985c16b7f464c56ed30596f5b65f6ee"
+                  },
+                  {
+                      "path":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\b0-probe\\ProbeContract.cs",
+                      "bytes":  255,
+                      "sha256":  "883e53edb21f473e004553878bc8bc34ae4da279c9d94b50fa9b18e1ab3d84ed",
+                      "sha512":  "f1a0a09f6a722d1088a851bd983a010c29018f636dd5734d4e6fec815b37b134b5c66ce70adc6e26cf225d39995d12d410aa7acc2ea780555d2e377f053ad865"
+                  },
+                  {
+                      "path":  "C:\\Users\\wongn\\Documents\\Interview\\Manus\\tasks\\1 - desktop voice actor\\.work\\worktrees\\voice-b0-toolchain-L7GDB\\.work\\b0-probe\\nuget.config",
+                      "bytes":  217,
+                      "sha256":  "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+                      "sha512":  "3de3742d0e1474a6f5cd2c32c7c3486306516d0602d79bf1f06232d89a1d4d23fa49e58d8320c6099caaa8259d55994b89d352786e91ea1bf392e6805d54fcc6"
+                  }
+              ]
+}
